@@ -7,29 +7,129 @@
     <meta name="desccription" content="Projeto Ecosun Dropshipping">
     <meta name="keywords" content="programcao, html, css, javascript">
     <meta name="author" content="Dorival Rigonato Junior, Arthur Dabela Lanoa, Evaldo Moreira de Barros, Joao Felipe Freitas, Jose Roberto Neves Bezerra">
-    <title>Página Inicial</title>
+    
+    <link rel="stylesheet" href="cssHome/estilo.css">
+    
+    <title>Ecosun - Home</title>
+
 </head>
-<body>
+
+<body style="background-color: rgb(108, 249, 165);">
     
     <header>
-
-        <nav>
-
-
-        </nav>
+        
+        <img src="img/logo-favicon.svg" alt="Ícone Ecosun" style="width: 49.55px; height: 53.33; align-content: left;">
+        <h2 style="font-size: 28px; color: #0D7011; font-weight: 300; margin-top: 9px;">Ecosun Dropshipping</h2>
+        
+        <div class="navegacao_header" style="color: #0D7011;">
+            <a href="index.html" style="padding: 3px; font-size: 25px; color: #0D7011; font-weight: 400; "><b>Home</b></a>&nbsp;
+            <a href="quemSomos.html" style="padding: 3x;font-size: 25px; color: #0D7011; font-weight: 400; "><b>Quem Somos</b></a>
+            <a href="produtos.html" style="padding: 3px;font-size: 25px; color: #0D7011; font-weight: 400; "><b>Produtos</b></a>
+            <a href="quemSomos.html" style="padding: 3px;font-size: 25px; color: #0D7011; font-weight: 400; "><b>Sobre</b></a>
             
+            <div class="box_navegacao">
+                Procurar
+                <img src="img/procurar.svg" alt="Ícone Procurar" style="width: 17px; height: 17px; margin-left: 105px; margin-bottom: -2px;"/>
+            </div>
+  
     </header>
 
     <main>
+        <div class="container_1">
+            <div class="produtos-em-destaque">
+                <div style="flex: 80%;">
+                    <h2>Produtos em Destaque</h2>
+                </div>
 
+                <div style="flex-grow: 50%;">
+                    <img style="width: 80%;" src="img/Placas solares.jpg" alt="">
+                    <p style="float: bottom;">Painel Solar</p>
+                </div>
+
+                <div style="flex-grow: 50%;">
+                    <img style="width: 75%;" src="img/iluminacao_solar.jpg" alt="">
+                    <p style="float: bottom;">Iluminação Solar</p>
+                </div>
+
+            </div>
+
+            <div class="como-funciona">
+                <div style="flex: 80%;">
+                    <h2>Como Funciona</h2>
+                </div>
+                    <video poster="/img/Placas solares.jpg" width=40% height=80% controls>
+
+                       <source src="/video/Func_01.mp4" type="video/mp4" >
+                        
+                                    
+                    </video>
+                    
+
+            </div>
+        </div>
+        <br><br><br><br><br><br><br><br>
+        <div class="container_2">
+            <div class="categorias-de-produtos">
+
+                <h2>Categorias de Produtos</h2>
+                <a href="Painéis Solar" style="padding: 10px; font-size: 20px; color: #0D7011; font-weight: 400; border: 1px solid; ">Painel Solar</a>
+                <a href="Inversor Solar" style="padding: 10px; font-size: 20px; color: #0D7011; font-weight: 400; border: 1px solid;">Inversor Solar</a>
+                <a href="Bateria Solar" style="padding: 10px; font-size: 20px; color: #0D7011; font-weight: 400; border: 1px solid;">Bateria Solar</a>
+                <a href="Iluminação Solar" style="padding: 10px; font-size: 20px; color: #0D7011; font-weight: 400; border: 1px solid;">Iluminação Solar</a>
+                <a href="Sistema de Montagem" style="padding: 10px; font-size: 20px; color: #0D7011; font-weight: 400; border: 1px solid;">Sistema de Montagem</a>
+                
+            </div>
+        </div>
+        <div class="whats">
+            <a href="https://api.whatsapp.com/send?phone=5511976235600&text=Ol%C3%A1%20peguei%20o%20seu%20contato%20no%20site!"><img width="80px" src="/img/whatsapp.png"></a>
+        </div>
+    
+        
 
 
     
     </main>
         
     <footer>
+        <div class="container_3">
+        
+            <div id="contact-info">
+                <h2>Contato</h2>
+                <p>Endereço: Rua Principal, 123</p>
+                <p>Telefone: (12) 3456-7890</p>
+                <p>E-mail: contato@minhaloja.com</p>
+            </div>
+            <div id="quick-links">
+                <ul>&nbsp;
+                    <li style="font-size: 18px; text-align: left;"><a style="color: green;" href="#">Política de Privacidade</a></li>&nbsp;
+                    <li style="font-size: 18px; text-align: left;"><a style="color: green;" href="#">Termos de Uso</a></li>&nbsp;
+                    <li style="font-size: 18px; text-align: left;"><a style="color: green;" href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div id="social-media">
+                <h2>Midias</h2>
+                <a href="#"><img width="30px" src="/img/facebook.png"></a>
+                <a href="#"><img width="30px" src="/img/instagram.png"></a>
+                <a href="#"><img width="30px" src="/img/linkedin.png"></a>
+            </div>
+            <div id="newsletter-form">
+                <h2>Newsletter</h2>
+                <a style="color: green;" href="#"><h3>Assine nossos Boletins Informativos</h3></a>
+            
+            </div>
+
+            <div>  
+                <form>
+                    <h2>Cadastre-se</h2>
+                    <input style="background: rgb(108, 249, 165); font-size: 19px;" type="email" placeholder="Seu e-mail">
+                    <button style="background: rgb(108, 249, 134); font-size: 20px; border: none;"submit">Assinar</button>
+                </form>
+            </div>
 
 
+
+        </div>
+        <p>&copy; 2023 Todos os direitos reservados.</p>
 
      
     </footer>
