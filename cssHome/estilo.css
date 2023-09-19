@@ -99,7 +99,8 @@ a:hover {
 }
 
 .categorias-de-produtos {
-    background-color: #bbec9d;
+
+    background-color: rgb(108, 249, 211);
     padding-top: 45px;
     padding-bottom: 55px;
     margin: 50px 0px 0px 0px;
@@ -129,11 +130,12 @@ a:hover {
     right: 10px;
 }
 footer {
-    margin-top: 0px;
+
     display: inline-block;
     width: 100%;
     padding: 1px;
     text-align: center;
+    /* border: 3px solid black; */
 }
 .container_3 {
     display: flex;
@@ -151,7 +153,4 @@ footer {
     width: 20%;
     margin-top: 1%;
     padding: 40px;
-    padding-top: 300px;
-    padding-bottom: 300px;
-
 }
