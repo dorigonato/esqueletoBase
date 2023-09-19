@@ -3,7 +3,7 @@
 }
 .header{
     overflow: hidden;
-    background-color: #A2AEA4;
+    background-color: #a2a2ae;
     font-family: 'Calibri'; 
     padding: 5px 10px;
 }
@@ -39,6 +39,7 @@
     width: 493;
     height: 60;
     gap: 8px;
+
 }
 
 .links_header {
@@ -57,10 +58,36 @@
     color: #0D7011;
 }
 
-body {
+body { 
     background-color: #D8D8D8;
 }
 
 a:link {
     text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+h1 {
+    text-align: center;
+    color: green;
+    font-size: 50px;
+    text-decoration: underline;
+}
+h2{
+    text-align: center;
+    font-size: 40px;
+}
+.parag_1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    
+    width: 90%;
+    padding: 30px;
+    margin-left: 6%;
+    /* border: 2px solid green; */
+}
+.video_sust{
+    text-align: center;
 }
