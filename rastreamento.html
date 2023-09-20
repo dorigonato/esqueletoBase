@@ -10,7 +10,7 @@
      
     <link rel="stylesheet" href="cssHome/estilo.css">
     
-    <title>Ecosun - Rastreamento</title>
+    <title>Ecosun - Rastreamento de Pedido</title>
 
 </head>
 <body>
@@ -37,11 +37,40 @@
         </div>   
     </header>
 
-    <main style="overflow: auto;">
+    <main>
+        <img src="img/rastreio.png" alt="Rastrear Pedido">
 
+        <section>
+            <h2>Escolha como deseja rastrear seu pedido:</h2>
+            <form id="rastreamento-form">
+                <label for="tipo-rastreamento">Selecione o tipo de rastreamento:</label>
+                <select id="tipo-rastreamento" name="tipo-rastreamento" required>
+                    <option value="numero-rastreamento">Número de Rastreamento</option>
+                    <option value="numero-pedido">Número do Pedido</option>
+                </select><br><br>
+                <label for="numero-rastreamento-pedido">Número de Rastreamento ou Número do Pedido:</label>
+                <input type="text" id="numero-rastreamento-pedido" name="numero-rastreamento-pedido" required>
+                <button type="submit">Rastrear</button>
+            </form>
+        </section>
+        <section>
+            <h2>Detalhes do Pedido</h2>
+            <ol style="font-size: 20px;">
+                <li>Nome do Produto: Nome do Produto Exemplo</li>
+                <li>Número do Pedido: #123456789</li>
+                <li>Data de Compra: 20 de setembro de 2023</li>
+                <li>Endereço de Entrega: Rua Exemplo, Cidade, Estado, CEP 12345-678</li>
+            </ol>
+        </section>
+        <section id="resultado-rastreamento">
+            <h2>Resultado do Rastreamento:</h2>
+            <div id="resultado-texto">
+                
+                <p style="text-align: center; font-size: 30px;">Nenhum resultado de rastreamento disponível no momento.</p><br>
+            
+            </div>
+        </section>
 
-
-       
     </main>
         
     <footer>
