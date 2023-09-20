@@ -1,9 +1,14 @@
 *{
     box-sizing: border-box;
 }
+body {
+    background-color: #D8D8D8;
+    margin: 0;
+}
+
 .header{
     overflow: hidden;
-    background-color: #a2a2ae;
+    background-color: #A2AEA4;
     font-family: 'Calibri'; 
     padding: 5px 10px;
 }
@@ -27,19 +32,17 @@
     padding-top: 7px;
     margin-top: 7px;
     text-decoration: none;
-    font-size: 18px;
-
+    font-size: 20px;
+    font-weight: 400;
 }
 
 <!-- Itens de navegação do header>
 .navegacao_header {
     float: right;
     color: #0D7011;
-    background-color: #92A595;
     width: 493;
     height: 60;
     gap: 8px;
-
 }
 
 .links_header {
