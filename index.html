@@ -14,27 +14,28 @@
 
 </head>
 
-<body style="background-color: rgb(108, 249, 165);">
+<body>
     
     <header>
-        
-        <img src="img/logo-favicon.svg" alt="Ícone Ecosun" style="width: 49.55px; height: 53.33; align-content: left;">
-        <h2 style="font-size: 28px; color: #0D7011; font-weight: 300; margin-top: 9px;">Ecosun Dropshipping</h2>
-        
-        <div class="navegacao_header" style="color: #0D7011;">
-            <a href="index.html" style="padding: 3px; font-size: 25px; color: #0D7011; font-weight: 400; "><b>Home</b></a>&nbsp;
-            <a href="quemSomos.html" style="padding: 3x;font-size: 25px; color: #0D7011; font-weight: 400; "><b>Quem Somos</b></a>
-            <a href="produtos.html" style="padding: 3px;font-size: 25px; color: #0D7011; font-weight: 400; "><b>Produtos</b></a>
-            <a href="quemSomos.html" style="padding: 3px;font-size: 25px; color: #0D7011; font-weight: 400; "><b>Sobre</b></a>
-            <a href="sustentabilidade.html" style="padding: 3px;font-size: 25px; color: #0D7011; font-weight: 400; "><b>Sustentabilidade</b></a>
-            
-            <div class="box_navegacao">
-                Procurar
-                <img src="img/procurar.svg" alt="Ícone Procurar" style="width: 17px; height: 17px; margin-left: 105px; margin-bottom: -2px;"/>
-            </div>
-  
-    </header><br>
-    <hr style="border-color: green;">
+        <div class="header">
+            <img src="img/logo-favicon.svg" alt="Ícone Ecosun" style="width: 49.55px; height: 53.33; float: left;">
+            <div class="titulo_header">Ecosun Dropshipping</div>
+            <div class="navegacao_header">
+                <div class="links_header">
+                    <a href="index.html">Início</a>
+                    <a href="produtos.html">Produtos</a>
+                    <a href="quemSomos.html">Quem Somos</a>
+                    <a href="sustentabilidade.html">Sustentabilidade</a>
+                    <a href="quemSomos.html"><b>Sobre</b></a>
+                    <div class="box_navegacao">
+                        Procurar
+                        <img src="img/procurar.svg" alt="Ícone Procurar" style="width: 17px; height: 17px; margin-left: 105px; margin-bottom: -2px;"/>
+                    </div>
+                </div>
+            </div> 
+        </div>   
+    </header>
+
     <main>
 
         <div class="container_1">
@@ -94,30 +95,38 @@
                 <p>Telefone: (12) 3456-7890</p>
                 <p>E-mail: contato@minhaloja.com</p>
             </div>
-            <div id="quick-links">
-                <ul>&nbsp;
-                    <li style="font-size: 18px; text-align: left;"><a style="color: green;" href="polPrivacidade.html">Política de Privacidade</a></li>&nbsp;
-                    <li style="font-size: 18px; text-align: left;"><a style="color: green;" href="termosDeUso.html">Termos de Uso</a></li>&nbsp;
+
+            <div id="quick-links" style="margin-top: 90px;">
+
+                <ul style="list-style-type: none;">&nbsp;
+                    <li style="font-size: 19px; text-align: left;"><a style="color: green;" href="polPrivacidade.html">Política de Privacidade</a></li>&nbsp;
+                    <li style="font-size: 19px; text-align: left;"><a style="color: green;" href="termosDeUso.html">Termos de Uso</a></li>&nbsp;
                     <!-- <li style="font-size: 18px; text-align: left;"><a style="color: green;" href="#">FAQ</a></li> -->
                 </ul>
+
             </div>
+
             <div id="social-media">
                 <h2>Midias</h2>
                 <a href="#"><img width="30px" src="/img/facebook.png"></a>
                 <a href="#"><img width="30px" src="/img/instagram.png"></a>
-                <a href="#"><img width="30px" src="/img/linkedin.png"></a>
+                <a href="https://www.linkedin.com/in/dorivalrigonatojunior" target="_blank"><img width="30px" src="/img/linkedin.png"></a>
             </div>
+
             <div id="newsletter-form">
                 <h2>Newsletter</h2>
                 <a style="color: green;" href="#"><h3>Assine nossos Boletins Informativos</h3></a>
             
             </div>
 
-            <div>  
+            <div style="margin-top: 45px;">  
                 <form>
-                    <h2>Cadastre-se</h2>
-                    <input style="background: rgb(108, 249, 165); font-size: 19px;" type="email" placeholder="Seu e-mail">
-                    <button style="background: rgb(108, 249, 134); font-size: 20px; border: none;"submit">Assinar</button>
+
+                    <label style="color: green; font-size: 40px;" for="email"><b>Cadastre-se:</b></label><br><br>
+                    <input id="email" type="email" placeholder="Digite Seu e-mail aqui" style="background-color: #D8D8D8;; font-size: 19px;">
+                    <br><br>
+                    <input style="font-size: 20px;" type="submit" value="Assinar">
+                
                 </form>
             </div>
 
