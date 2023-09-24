@@ -119,6 +119,10 @@ main {
     font-size: 20px;
 }
 
+.button_contato:hover {
+    background-color: #a1a1a1b9;
+}
+
 .button_newsletter {
     box-sizing: border-box;
     border-radius: 6px;
@@ -132,6 +136,10 @@ main {
     margin-left: 2%;
     padding: 10px 30px;
     font-size: 20px;
+}
+
+.button_newsletter:hover {
+    background-color: #107a14e0;
 }
 
 .box_nossa_missao {
