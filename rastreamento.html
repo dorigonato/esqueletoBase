@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="desccription" content="Projeto Ecosun Dropshipping">
+    <meta name="keywords" content="programcao, html, css, javascript">
+    <meta name="author" content="Dorival Rigonato Junior, Arthur Dabela Lanoa, Evaldo Moreira de Barros, Joao Felipe Freitas, Jose Roberto Neves Bezerra">
+     
+    <link rel="stylesheet" href="cssHome/estilo.css">
+    
+    <title>Ecosun - Rastreamento de Pedido</title>
+
+</head>
+<body>
+    
+    <header>
+        <div class="header">
+            <img src="img/logo-favicon.svg" alt="Ícone Ecosun" style="width: 49.55px; height: 53.33; float: left;">
+            <div class="titulo_header">Ecosun Dropshipping</div>
+            <div class="navegacao_header">
+                <div class="links_header">
+                    <a href="index.html">Início</a>
+                    <a href="produtos.html">Produtos</a>
+                    <a href="quemSomos.html">Quem Somos</a>
+                    <a href="sustentabilidade.html">Sustentabilidade</a>
+                    <a href="rastreamento.html">Rastreamento</a>
+                    <a href="login.html">Log In</a>
+                    <a href="quemSomos.html"><b>Sobre</b></a>
+                    <a href="carrinhoDeCompras.html"><img src="img/carrinho-de-compras.png" alt=""></a>
+                    <div class="box_navegacao">
+                        Procurar
+                        <img src="img/procurar.svg" alt="Ícone Procurar" style="width: 17px; height: 17px; margin-left: 105px; margin-bottom: -2px;"/>
+                    </div>
+                </div>
+            </div> 
+        </div>   
+    </header>
+
+    <main>
+        <img src="img/rastreio.png" alt="Rastrear Pedido">
+
+        <section>
+            <h2>Escolha como deseja rastrear seu pedido:</h2>
+            <form id="rastreamento-form">
+                <label for="tipo-rastreamento">Selecione o tipo de rastreamento:</label>
+                <select id="tipo-rastreamento" name="tipo-rastreamento" required>
+                    <option value="numero-rastreamento">Número de Rastreamento</option>
+                    <option value="numero-pedido">Número do Pedido</option>
+                </select><br><br>
+                <label for="numero-rastreamento-pedido">Número de Rastreamento ou Número do Pedido:</label>
+                <input type="text" id="numero-rastreamento-pedido" name="numero-rastreamento-pedido" required>
+                <button type="submit">Rastrear</button>
+            </form>
+        </section>
+        <section>
+            <h2>Detalhes do Pedido</h2>
+            <ol style="font-size: 20px;">
+                <li>Nome do Produto: Nome do Produto Exemplo</li>
+                <li>Número do Pedido: #123456789</li>
+                <li>Data de Compra: 20 de setembro de 2023</li>
+                <li>Endereço de Entrega: Rua Exemplo, Cidade, Estado, CEP 12345-678</li>
+            </ol>
+        </section>
+        <section id="resultado-rastreamento">
+            <h2>Resultado do Rastreamento:</h2>
+            <div id="resultado-texto">
+                
+                <p style="text-align: center; font-size: 30px;">Nenhum resultado de rastreamento disponível no momento.</p><br>
+            
+            </div>
+        </section>
+
+    </main>
+        
+    <footer>
+        <div class="container_3">
+        
+            <div id="contact-info">
+                <h2>Contato</h2>
+                <p>Endereço: Rua Principal, 123</p>
+                <p>Telefone: (12) 3456-7890</p>
+                <p>E-mail: contato@minhaloja.com</p>
+            </div>
+
+            <div id="quick-links" style="margin-top: 90px;">
+
+                <ul style="list-style-type: none;">&nbsp;
+                    <li style="font-size: 19px; text-align: left;"><a style="color: green;" href="polPrivacidade.html">Política de Privacidade</a></li>&nbsp;
+                    <li style="font-size: 19px; text-align: left;"><a style="color: green;" href="termosDeUso.html">Termos de Uso</a></li>&nbsp;
+                    <!-- <li style="font-size: 18px; text-align: left;"><a style="color: green;" href="#">FAQ</a></li> -->
+                </ul>
+
+            </div>
+
+            <div id="social-media">
+                <h2>Midias</h2>
+                <a href="#"><img width="30px" src="/img/facebook.png"></a>
+                <a href="#"><img width="30px" src="/img/instagram.png"></a>
+                <a href="https://www.linkedin.com/in/dorivalrigonatojunior" target="_blank"><img width="30px" src="/img/linkedin.png"></a>
+            </div>
+
+            <div id="newsletter-form">
+                <h2>Newsletter</h2>
+                <a style="color: green;" href="#"><h3>Assine nossos Boletins Informativos</h3></a>
+            
+            </div>
+
+            <div style="margin-top: 45px;">  
+                <form>
+
+                    <label style="color: green; font-size: 40px;" for="email"><b>Cadastre-se:</b></label><br><br>
+                    <input id="email" type="email" placeholder="Digite Seu e-mail aqui" style="background-color: #D8D8D8;; font-size: 19px;">
+                    <br><br>
+                    <input style="font-size: 20px;" type="submit" value="Assinar">
+                
+                </form>
+            </div>
+
+
+
+        </div>
+        <p>&copy; 2023 Todos os direitos reservados.</p>
+
+     
+    </footer>
+
+</body>
+</html>
