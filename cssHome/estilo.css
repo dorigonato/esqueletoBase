@@ -163,3 +163,62 @@ footer {
     margin-top: 1%;
     padding: 40px;
 }
+
+/*página de login */
+
+.login {
+    display: block;
+    background-color: #0D7011;
+    color: #1DF024;
+    font-size: 17px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2ex 3ex;
+    margin-top: 50px;
+    border-radius: 50px;
+    margin-bottom: 50px; 
+}
+
+.lembrar-senha {
+    font-size: 10px;
+}
+
+
+.login form {
+    font-size: 25px;
+}
+
+.login h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.login a, p{
+    font-size: 10px;
+    text-align: center;
+}
+
+.id-senha input {
+    border: 3px solid #a2aea4;
+    padding: 10px;
+    height: 100%;
+    width: 300px;
+}
+
+.lembrar-senha {
+    text-align: end;
+}
+
+input[type="submit"] {
+    display: block;
+    border: 3px solid #A2AEA4;
+    height: 100%;
+    width: 200px;
+    margin-top: 8px;
+    align-items: center;
+    }
+
+input .acesso {
+    align-items: center;
+}
