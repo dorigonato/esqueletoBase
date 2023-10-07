@@ -71,7 +71,7 @@ main {
     width: 250px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
-    background-image: url('/img/procurar.svg');
+    background-image: url('../img/procurar.svg');
     background-repeat: no-repeat;
     background-position-x: 98%;
     background-position-y: 50%;
