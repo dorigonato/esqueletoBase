@@ -207,3 +207,8 @@ input:focus, textarea:focus{
     border: 1px solid green;
     outline: 0;
 }
+
+input[type=email], input[type=submit]{
+    text-align: center;
+    width: auto;
+}
