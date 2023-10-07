@@ -2,12 +2,24 @@
     box-sizing: border-box;
 }
 
+/*Reset da página*/
+
 body {
     background-color: #D8D8D8;
     margin: 0;
 }
 
+/*Espaçamento entre o header e o conteúdo principal
+Terá que ser modificado conforme adicionado mais conteúdo*/
+
+main {
+    margin-top: 3%;
+}
+
+/*Header*/
+
 .header{
+    display: flex;
     overflow: hidden;
     background-color: #A2AEA4;
     font-family: 'Calibri'; 
@@ -37,11 +49,11 @@ body {
     font-weight: 400;
 }
 
-<!-- Itens de navegação do header>
+/*Itens de navegação do header*/
+
 .navegacao_header {
-    float: right;
     color: #0D7011;
-    width: 493;
+    margin-left: 50px;
     height: 60;
     gap: 8px;
 }
@@ -51,20 +63,59 @@ body {
 }
 
 .box_navegacao {
-    float: right;
-    width: 200px;
-    padding: 8px;
-    margin-top: 7px;
-    margin-bottom: 5px;
-    box-sizing: border-box;
-    border-radius: 6px;
-    border: 1px solid #00000010;
-    color: #0D7011;
+    width: 44%;
+    display:block;
+    margin: 0 0 0 auto;
 }
 
-body {
-    background-color: #D8D8D8;
+.box_navegacao input[type=text] {
+    width: 250px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    background-image: url('../img/procurar.svg');
+    background-repeat: no-repeat;
+    background-position-x: 98%;
+    background-position-y: 50%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    border: 1px solid #00000010;
+    color: #0D7011;
+    background-color: #2c2c2c1c;
 }
+
+.box_navegacao input:focus {
+    width: 100%;
+    box-shadow: 0 0 0 0;
+    background-color: #2c2c2c1c;
+    border: 1px solid green;
+    outline: 0;
+}
+
+.header button {
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 30px;
+    color: #ffffff;
+    border: none;
+    height: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 0px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #0d701080;
+    font-size: 20px;
+    font-family: 'Calibri';
+}
+
+.header button:hover {
+    background-color: #0D7011;
+}
+
+/*Fim do header*/
 
 a:link {
     text-decoration: none;
@@ -216,6 +267,19 @@ footer {
     text-align: end;
 }
 
+input {
+    width: 18%;
+    border-radius: 6px;
+    background-color: #2c2c2c1c;
+    border: 1px solid #00000010;
+    margin-top: 1%;
+    padding-left: 1%;
+    height: 30px;
+    font-family: 'Calibri';
+    color: #0D7011;
+    font-size: 15px;
+}
+
 input[type="submit"] {
     display: block;
     border: 1px solid #A2AEA4;
@@ -238,7 +302,7 @@ input.acessar {
 
 input:focus {
     box-shadow: 0 0 0 0;
-    background-color: #cccccc;
+    background-color: #2c2c2c1c;
     border: 1px solid #A2AEA4;
     outline: 0;
 }
