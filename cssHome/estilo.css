@@ -268,7 +268,7 @@ footer {
 }
 
 input {
-    width: 18%;
+    /*width: 18%;*/
     border-radius: 6px;
     background-color: #2c2c2c1c;
     border: 1px solid #00000010;
@@ -284,7 +284,7 @@ input[type="submit"] {
     display: block;
     border: 1px solid #A2AEA4;
     height: 100%;
-    width: 200px;
+    width: 197px;
     margin-top: 8px;
     align-items: center;
 }
