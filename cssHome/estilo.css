@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    font-family: 'Calibri';
 }
 
 /*Reset da página*/
@@ -307,7 +308,7 @@ input.acessar {
 
 input:focus {
     box-shadow: 0 0 0 0;
-    background-color: #2c2c2c1c;
+    background-color: #e7e7e7;
     border: 1px solid #A2AEA4;
     outline: 0;
 }
