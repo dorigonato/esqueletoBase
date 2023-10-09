@@ -377,20 +377,39 @@ textarea {
 
 /*Footer*/
 
-footer {
+/*footer {
     display: block;
     bottom: 0;
     width: 100%;
     height: 50px;
     background-color: #a2aea4;
     text-align: center;    
-}
+}*/
 
 .texto_footer {
     padding-top: 0.7%;
     font-family: 'Calibri';
     color: #0D7011;
     font-size: 20px;
+}
+
+.container_3 {
+    font-family: 'Calibri';
+    color: #0D7011;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;        
+    width: 100%;
+    border-top: 1px solid #cccccc;
+    background-color: #a2aea4;
+}
+.container_3 div {
+    position: relative;
+    top: 0;
+    width: 15%;
+    margin-top: 1%;
+    padding: 40px;
 }
 
 /*outras estilizações*/
