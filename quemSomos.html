@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <meta name="description" content="Projeto Ecosun Dropshipping">
     <meta name="keywords" content="programacao, html, css, javascript">
     <meta name="author" content="Dorival Rigonato Junior, Arthur Dabela Lanoa, Evaldo Moreira de Barros, Joao Felipe Freitas, Jose Roberto Neves Bezerra">
     <link rel="icon" href="img/logo-favicon.svg" type="image/png">
     <link rel="stylesheet" href="styles.css">
     <title>EcoSun - Quem somos</title>
-    <script src="funcoes.js"></script>
+    <script src="funcoes.js" defer></script>
 </head>
 <body>    
     <header>
@@ -22,16 +22,41 @@
             </div>
             <div class="navegacao_header">
                 <div class="links_header">
-                    <a href="index.html">Início</a>
-                    <a href="produtos.html">Produtos</a>
-                    <a href="sustentabilidade.html">Sustentabilidade</a>
-                    <a href="rastreamento.html">Rastreamento</a>
-                    <a href="quemSomos.html"><b>Quem somos</b></a>
-                    <a href="login.html" style="margin: 0; padding: 0;"><button>Entrar</button></a>
-                    <a href="carrinhoDeCompras.html"><img src="img/carrinho.png" style="color: #0D7011; width: 30px; margin-top: -5px; margin-right: -10px;"></a>
+                    <div class="mobile-menu">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="produtos.html" class="nav-link">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="sustentabilidade.html" class="nav-link">Sustentabilidade</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="rastreamento.html" class="nav-link">Rastreamento</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="quemSomos.html" class="nav-link"><b>Quem somos</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="login.html" style="margin: 0; padding: 0;" class="nav-link">
+                                <button>Entrar</button></a>
+                            </li>
+                        <li class="nav-item"><a href="carrinhoDeCompras.html" class="nav-link">
+                            <img src="img/carrinho.png" style="color: #0D7011; width: 30px; margin-top: -5px; margin-right: -10px;"></a>
+                        </li>
+                    </ul>
                 </div>
             </div> 
-        </div>   
+        </div> 
+        <div class="box_navegacao_mobile">
+            <input type="text" name="procurar" placeholder="Procurar">
+        </div>  
     </header>
     <main>
         <div class="body_left">
