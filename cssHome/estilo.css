@@ -23,7 +23,7 @@ main {
     display: flex;
     overflow: hidden;
     background-color: #A2AEA4;
-    font-family: 'Calibri'; 
+    font-family: 'Calibri';
     padding: 5px 10px;
 }
 
@@ -125,81 +125,65 @@ a:link {
 a:hover {
     text-decoration: underline;
 }
+*{
+    box-sizing: border-box;
+}
 .container_1 {
-    position: relative;
-    display: inline-block;
+    background: rgb(202, 167, 235);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: flex-start;
     width: 100%;
-    height: 500px;
+    height: 700px;
 }
 .produtos-em-destaque {
-    position: absolute;
-    display: inline-block;
+    flex-grow: 1;
+    background: yellowgreen;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
     text-align: center;
-    width: 50%;
-    height: 500px;
-    color: #0D7011;
-    font-size: 20px;
-    
+    height: 400px;
 }
 .burko_portatil {
-    position: absolute;
-    display: inline-block;
+    
     left: 0px;
     top: 130px;
     width: 50%;
     height: 350px;
-    
 }
-.kit_painel {
-    position: absolute;
-    display: inline-block;
+.kit_painel {   
     right: 0px;
     top: 130px;
     width: 50%;
     height: 350px;
-    
 }
 .como-funciona {
-    position: absolute;
-    display: inline-block;
+    background: rgb(0, 195, 255);    
     text-align: center;
-    width: 50%;
-    height: 500px;
-    color: #0D7011;
-    top: 0px;
-    right: 0px;
-    font-size: 20px;    
+    height: 400px;
 }
 .categorias-de-produtos {
-
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
     background-color: #D8D8D8;
-    padding-top: 45px;
+    /* padding-top: 45px;
     padding-bottom: 55px;
     margin: 50px 0px 0px 0px;
-    width: 100%;
+    width: 100%; */
     font-size: 30px;
-    height: 300px;
+    height: 200px;
     color: #0D7011;
     text-align: center;
     text-decoration: none;
 }
-.parag_2 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    text-align: justify;
-    
-    width: 90%;
-    padding: 3px;
-    margin-left: 6%;
-}
-.parag_3 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
-    text-align: center;
-    
-    width: 90%;
-    padding: 3px;
-    margin-left: 6%;
+.categorias-de-produtos a {
+    height: 80px;
+    flex-grow: 1;
 }
 .cp1{
     padding: 15px;
@@ -208,12 +192,69 @@ a:hover {
     border: 1px solid;
 }
 .cp1:hover {
-    color: darkgreen;
-    border: darkgreen solid 3px;
-    background: greenyellow;
+    color: #9acd32;
+    border: #d8d8d8 solid 3px;
+    background: #008000;
     padding: 20px;
     text-decoration: none;
 }
+.e-books {
+    border: black solid 4px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+}
+#capa_1 {
+    flex-grow: 1;
+    /* background-color: #D8D8D8; */
+    background: white;
+    margin: 10px;
+    height: 350px;
+    color: #0D7011;
+    text-align: center;
+}
+#capa_2 {
+    flex-grow: 1;
+    /* background-color: #D8D8D8; */
+    background-color: rgb(0, 200, 255);
+    margin: 10px;
+    height: 350px;
+    color: #0D7011;
+    text-align: center;
+}
+#capa_3 {
+    flex-grow: 1;
+    /* background-color: #D8D8D8; */
+    background: yellowgreen;
+    margin: 10px;
+    height: 350px;
+    color: #0D7011;
+    text-align: center;
+}
+
+.parag_2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: justify;
+
+    width: 90%;
+    padding: 3px;
+    margin-left: 6%;
+}
+.parag_3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;
+
+    width: 90%;
+    padding: 3px;
+    margin-left: 6%;
+}
+
 
 .whats {
     background: green;
@@ -229,7 +270,7 @@ h2{
     text-align: center;
     color: green;
     font-size: 40px;
-    
+
 }
 footer {
 
@@ -243,7 +284,7 @@ footer {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    align-content: center;        
+    align-content: center;
     width: 100%;
     height: 160px;
     border-top: 1px solid green;
@@ -270,7 +311,7 @@ footer {
     padding: 2ex 3ex;
     margin-top: 50px;
     border-radius: 50px;
-    margin-bottom: 50px; 
+    margin-bottom: 50px;
 }
 
 .lembrar-senha {
@@ -338,11 +379,11 @@ input.cadastroEmail{
 
 input.acessar {
     background-color: #f0f0f0;
-    margin-left: auto; 
-    margin-right: auto; 
-    margin-top: 2%; 
-    width: 27%; 
-    padding-top: 1.2%; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    width: 27%;
+    padding-top: 1.2%;
     padding-bottom: 1.2%;
     border-radius: 6px;
 }
