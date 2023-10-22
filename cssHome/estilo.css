@@ -52,6 +52,9 @@ main {
 
 /*Itens de navegação do header*/
 
+*{
+    box-sizing: border-box;
+}
 .navegacao_header {
     color: #0D7011;
     margin-left: 50px;
@@ -125,93 +128,115 @@ a:link {
 a:hover {
     text-decoration: underline;
 }
-*{
-    box-sizing: border-box;
-}
+
 .container_1 {
-    background: rgb(202, 167, 235);
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
-    align-items: flex-start;
-    width: 100%;
-    height: 700px;
-}
-.produtos-em-destaque {
-    flex-grow: 1;
-    background: yellowgreen;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+    align-items: center;
     align-content: center;
+    padding: 14px 20px;
+}
+@media screen and (max-width: 800px){
+    .container_1{
+        flex-direction: column;
+        height: 300px;
+        margin-bottom: 100px;
+    }
+}
+
+.produtoDestaque {
+    flex-flow: 1;
+    flex: 30%;
+    margin:0%;
     text-align: center;
     height: 400px;
 }
-.burko_portatil {
-    
-    left: 0px;
-    top: 130px;
-    width: 50%;
-    height: 350px;
+
+.container_2{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 410px;
 }
-.kit_painel {   
-    right: 0px;
-    top: 130px;
-    width: 50%;
-    height: 350px;
+.div1{
+    position: absolute;
+    left: 45%;
+    top: 0px;
+    display: inline-block;
 }
-.como-funciona {
-    background: rgb(0, 195, 255);    
-    text-align: center;
-    height: 400px;
+@media screen and (max-width: 900px){
+    .div1{
+        left: 35%;
+    }
 }
+
+.div2{
+    position: absolute;
+    left: 35%;
+    top: 100px;
+    display: inline-block;
+}
+
+@media screen and (max-width: 700px){
+    .div2{
+        left: 10%;
+    }
+}
+
 .categorias-de-produtos {
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
     align-content: center;
-    background-color: #D8D8D8;
-    /* padding-top: 45px;
-    padding-bottom: 55px;
-    margin: 50px 0px 0px 0px;
-    width: 100%; */
-    font-size: 30px;
-    height: 200px;
-    color: #0D7011;
-    text-align: center;
-    text-decoration: none;
+    padding: 14px 20px;
+
+
 }
 .categorias-de-produtos a {
-    height: 80px;
     flex-grow: 1;
+    text-align: center;
+
 }
+
+@media screen and (max-width: 700px){
+    .categorias-de-produtos {
+        flex-direction: column;
+    }
+}
+
 .cp1{
     padding: 15px;
     font-size: 30px;
     color: #0D7011;
-    border: 1px solid;
+    border: white 2px double;
+    height: auto;
 }
 .cp1:hover {
     color: #9acd32;
-    border: #d8d8d8 solid 3px;
+    border: #d8d8d8 groove 5px;
     background: #008000;
-    padding: 20px;
+    padding: 25px;
     text-decoration: none;
 }
+
 .e-books {
-    border: black solid 4px;
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
     align-content: center;
-    width: 100%;
-    height: 500px;
+    padding: 14px 20px;
     text-align: center;
 }
+
 #capa_1 {
     flex-grow: 1;
-    /* background-color: #D8D8D8; */
-    background: white;
+    background-color: #D8D8D8;
     margin: 10px;
     height: 350px;
     color: #0D7011;
@@ -219,8 +244,7 @@ a:hover {
 }
 #capa_2 {
     flex-grow: 1;
-    /* background-color: #D8D8D8; */
-    background-color: rgb(0, 200, 255);
+    background-color: #D8D8D8;
     margin: 10px;
     height: 350px;
     color: #0D7011;
@@ -228,8 +252,7 @@ a:hover {
 }
 #capa_3 {
     flex-grow: 1;
-    /* background-color: #D8D8D8; */
-    background: yellowgreen;
+    background-color: #D8D8D8;
     margin: 10px;
     height: 350px;
     color: #0D7011;
@@ -269,34 +292,31 @@ a:hover {
 h2{
     text-align: center;
     color: green;
-    font-size: 40px;
+    font-size: 25px;
 
 }
-footer {
 
-    display: inline-block;
-    width: 100%;
-    padding: 1px;
-    text-align: center;
-    /* border: 3px solid black; */
-}
 .container_3 {
+    border-top: #0D7011 double 3px;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
     align-content: center;
-    width: 100%;
-    height: 160px;
-    border-top: 1px solid green;
-    background-color: #D8D8D8;
+    padding: 10px 10px;
+    text-align: center;
 }
 .container_3 div {
-    position: relative;
-    top: 0;
-    width: 20%;
-    margin-top: 1%;
-    padding: 40px;
+    flex-grow: 1;
 }
+
+@media screen and (max-width: 800px){
+    .container_3 {
+        flex-direction: column;
+    }
+}
+
 
 /*página de login */
 
