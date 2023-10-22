@@ -424,7 +424,7 @@ a:link {
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .login {
@@ -434,6 +434,7 @@ a:hover {
 /*responsividade*/
 
 .nav-list {
+    align-items: center;
     list-style: none;
     display: flex;
 }
@@ -449,6 +450,13 @@ a:hover {
 
 .nav-link:hover {
     color: #464646;
+}
+
+.img-carrinho {
+    color: #0D7011; 
+    width: 30px; 
+    margin-top: -5px; 
+    margin-right: -10px;
 }
 
 ul {
@@ -573,7 +581,7 @@ ul {
 
     .nav-list {
         position: fixed;
-        top: 70px;
+        top: 58px;
         right: -100%;
         width: 30%;
         gap: 0;
@@ -596,6 +604,19 @@ ul {
         opacity: 100;
     }
 
+    .nav-item button {
+        border-radius: 0;
+        color: #0D7011;
+        border: none;
+        background-color: #262626;
+    }
+
+    .nav-item button:hover{
+        color: #464646; 
+        background-color: #262626; 
+        transition: all 0.3s ease-in-out;  
+    }
+    
     .mobile-menu {
         margin-top: 30%;
         display: block;
