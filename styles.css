@@ -116,6 +116,21 @@ main {
 
 /*Body*/
 
+.img-logo-header {
+    width: 49.55px; 
+    height: 53.33; 
+    float: left;
+}
+
+.img-logo-body {
+    width: 25%; 
+    height: 25%; 
+    margin-left: auto; 
+    margin-right: auto; 
+    display: block; 
+    margin-top: 10%;
+}
+
 .body_left {
     float: left;
     width: 50%;
@@ -211,11 +226,46 @@ main {
     border: 1px solid #00000010;    
 }
 
+.box_nosso_time {
+    float: right; 
+    margin-right: 24.2%;
+    width: 25%;
+    margin-top: 7px;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    padding-left: 5%;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: 1px solid #00000010;
+}
+
 .texto_nossa_missao {
     text-align: justify;
     font-family: 'Calibri';
     color: #0D7011;
     font-size: 20px;
+    padding-top: 10px;
+}
+
+.texto_nome_time {
+    text-align: justify;
+    font-family: 'Calibri';
+    color: #0D7011;
+    font-size: 20px;
+    padding-top: 10px;
+    margin-left: 8%; 
+    font-size: 18px; 
+    margin-top: 1%;
+}
+
+.texto_funcao_time{
+    font-size: 13px; 
+    margin-left:8%; 
+    margin-top: -10px;
+    text-align: justify;
+    font-family: 'Calibri';
+    color: #0D7011;
     padding-top: 10px;
 }
 
@@ -524,7 +574,20 @@ ul {
 @media only screen and (max-width: 1650px) {
     .box_navegacao {
         width: 28%;
+    }
+    .box_nossa_missao{
+        padding-left: 3%;
+    }
+    .box_nosso_time {
+        padding-left: 3%;
+        margin-right: 24%;
+    }
+    .proximo {
+        right:24.3%;
     }    
+    .anterior {
+        left: 51%;
+    }
 }
 
 @media only screen and (max-width: 1476px) {
@@ -537,6 +600,19 @@ ul {
     .box_navegacao {
         width: 20%;
     }    
+    .box_nossa_missao{
+        padding-left: 1.8%;
+    }
+    .box_nosso_time{
+        padding-left: 2%;
+        margin-right: 23.8%;
+    }
+    .proximo{
+        right: 24.1%;
+    }
+    .anterior{
+        left: 51.2%;
+    }
 }
 
 @media only screen and (max-width: 1331px) {
@@ -549,7 +625,43 @@ ul {
     body {
         overflow-x: hidden;
     }
+    
+    .body_left{
+        width: 100%;
+        padding-bottom: 60px;
+    }
 
+    .body_right{
+        width: 100%;
+    }
+
+    .titulo_body_right, .texto_body_right, .button_align_left{
+        text-align: center;
+    }
+
+    .button_align_left{
+        margin-bottom: 35px;
+    }
+
+    .box_nossa_missao {
+        width: 30%;
+        height: 173px;
+        position: relative;
+        left: 18%;
+    }
+
+    .box_nosso_time {
+        position: relative;
+        width: 30%;
+        right:-5.5%;
+    }
+
+    .anterior{
+        left: 0%;
+    }
+    .proximo{
+        right: 0%;
+    }
     .box_navegacao {
         opacity: 0;        
     }
