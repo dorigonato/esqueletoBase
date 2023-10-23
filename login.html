@@ -9,27 +9,53 @@
     <meta name="author" content="Dorival Rigonato Junior, Arthur Dabela Lanoa, Evaldo Moreira de Barros, Joao Felipe Freitas, Jose Roberto Neves Bezerra">
     <link rel="stylesheet" href="cssHome/estilo.css"> 
     <title>Login</title>
+    <script src="funcoesAll.js" defer></script>
 </head>
 <body>
     <header>
         <div class="header">
-            <img src="img/logo-favicon.svg" alt="Ícone Ecosun" style="width: 49.55px; height: 53.33; float: left;">
+            <img src="img/logo-favicon.svg" alt="Ícone Ecosun" class="img-logo-header">
             <div class="titulo_header">Ecosun Dropshipping</div>
             <div class="box_navegacao">
                 <input type="text" name="procurar" placeholder="Procurar">
             </div>
             <div class="navegacao_header">
                 <div class="links_header">
-                    <a href="index.html">Início</a>
-                    <a href="produtos.html">Produtos</a>
-                    <a href="sustentabilidade.html">Sustentabilidade</a>
-                    <a href="rastreamento.html">Rastreamento</a>
-                    <a href="quemSomos.html"><b>Quem somos</b></a>
-                    <a href="login.html" style="margin: 0; padding: 0;"><button>Entrar</button></a>
-                    <a href="carrinhoDeCompras.html"><img src="img/carrinho.png" style="color: #0D7011; width: 30px; margin-top: -5px; margin-right: -10px;"></a>
+                    <div class="mobile-menu">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="produtos.html" class="nav-link">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="sustentabilidade.html" class="nav-link">Sustentabilidade</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="rastreamento.html" class="nav-link">Rastreamento</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="quemSomos.html" class="nav-link">Quem somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="login.html" style="margin: 0; padding: 0;" class="nav-link">
+                                <button>Entrar</button></a>
+                            </li>
+                        <li class="nav-item"><a href="carrinhoDeCompras.html" class="nav-link">
+                            <img src="img/carrinho.png" class="img-carrinho"></a>
+                        </li>
+                    </ul>
                 </div>
             </div> 
-        </div>   
+        </div> 
+        <div class="box_navegacao_mobile">
+            <input type="text" name="procurar" placeholder="Procurar">
+        </div>  
     </header>
 <main>
     <div class="login">
