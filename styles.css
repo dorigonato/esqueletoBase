@@ -4,6 +4,7 @@ body {
     background-color: #D8D8D8;
     margin: 0;
     overflow-x: hidden;
+    font-family: 'Calibri';
 }
 
 /*Espaçamento entre o header e o conteúdo principal*/
@@ -18,7 +19,6 @@ main {
     display: flex;
     overflow: hidden;
     background-color: #A2AEA4;
-    font-family: 'Calibri'; 
     padding: 5px 10px;
 }
 
@@ -107,7 +107,6 @@ main {
     cursor: pointer;
     background-color: #0d701080;
     font-size: 20px;
-    font-family: 'Calibri';
 }
 
 .header button:hover {
@@ -144,7 +143,6 @@ main {
     color: #0D7011;
     font-weight: 200;
     padding-top: 5px;
-    font-family: 'Calibri';
     font-size: 30px;
 }
 
@@ -158,7 +156,6 @@ main {
     text-align: left;
     color: #0D7011;
     padding-top: 5px;
-    font-family: 'Calibri';
     font-size: 45px;
 }
 
@@ -167,7 +164,6 @@ main {
     color: #0D7011;
     font-weight: 200;
     padding-top: 1%;
-    font-family: 'Calibri';
     font-size: 25px;
 }
 
@@ -178,7 +174,6 @@ main {
 .button_contato {
     box-sizing: border-box;
     border-radius: 30px;
-    font-family: 'Calibri';
     color: #0D7011;
     border: 2px solid #0D7011;
     cursor: pointer;
@@ -187,7 +182,6 @@ main {
     margin-bottom: 2%;
     padding: 10px 40px;
     font-size: 20px;
-    
 }
 
 .button_contato:hover {
@@ -197,7 +191,6 @@ main {
 .button_newsletter {
     box-sizing: border-box;
     border-radius: 30px;
-    font-family: 'Calibri';
     color: #cfcfcf;
     border: 2px solid #0D7011;
     cursor: pointer;
@@ -242,7 +235,6 @@ main {
 
 .texto_nossa_missao {
     text-align: justify;
-    font-family: 'Calibri';
     color: #0D7011;
     font-size: 20px;
     padding-top: 10px;
@@ -250,7 +242,6 @@ main {
 
 .texto_nome_time {
     text-align: justify;
-    font-family: 'Calibri';
     color: #0D7011;
     font-size: 20px;
     padding-top: 10px;
@@ -264,15 +255,13 @@ main {
     margin-left:8%; 
     margin-top: -10px;
     text-align: justify;
-    font-family: 'Calibri';
     color: #0D7011;
     padding-top: 10px;
 }
 
 .box_tipo_nossa_missao {
     float: left;
-    width: 10%;
-    font-family: 'Calibri';
+    width: 14%;
     font-size: 15px;
     margin-top: 7px;
     padding-top: 0.5%;
@@ -287,10 +276,21 @@ main {
 }
 
 .icon_time {
+    left: -25px;
+    position: relative;
     float: left;
     width: 6%;
     padding-top: 4%;
     margin-left: -24%;
+}
+
+.icon_time_avaliacao{
+    position: relative;
+    float: left;
+    width: 12%;
+    padding-top: 4%;
+    margin-left: 8%;
+    margin-right: 5%;
 }
 
 .mySlides {
@@ -348,6 +348,38 @@ main {
     background-color: #717171;
 }
 
+.secao_avaliacoes {
+    float: left;
+    width: 50%;
+    padding: 8px;
+    margin-top: 2%;
+    text-align: center;
+}
+
+.titulo_avaliacoes {
+    text-align: left;
+    color: #0D7011;
+    padding-top: 5px;
+    font-size: 45px;
+    margin-left: 25%;
+}
+
+.texto_avaliacoes {
+    text-align: left;
+    color: #0D7011;
+    font-weight: 200;
+    padding-top: 1%;
+    font-size: 25px;
+    margin-left: 25%; 
+    margin-top: 1%;
+}
+
+.button_align_avaliacoes{
+    text-align: left;
+    margin-left: 25%; 
+    margin-top: 2%;
+}
+
 .box_avaliacoes {
     float: left;
     width: 12%;
@@ -363,8 +395,7 @@ main {
 }
 
 .avaliacoes_nome {
-    text-align: justify;
-    font-family: 'Calibri';
+    text-align: start;
     color: #0D7011;
     font-size: 15px;
     padding-top: 5%;
@@ -372,16 +403,20 @@ main {
 
 .texto_avaliacao {
     text-align: left;
-    font-family: 'Calibri';
     color: #0D7011;
     font-size: 15px;
-    padding-top: 8%;
+    padding-top: 6%;
     margin-left: 8%;
 }
 
 .icone_avaliacao {
     width: 5%;
     margin-left: -2%;
+}
+
+.icone_avaliacao_primeiro{
+    margin-left: 1%;
+    width:5%;
 }
 
 .separador_secao {
@@ -391,7 +426,6 @@ main {
 
 .titulo_contato {
     text-align: left;
-    font-family: 'Calibri';
     color: #0D7011;
     font-size: 15px;
     padding-top: 3.5%;
@@ -405,7 +439,6 @@ input {
     margin-top: 1%;
     padding-left: 1%;
     height: 30px;
-    font-family: 'Calibri';
     color: #0D7011;
     font-size: 15px;
 }
@@ -424,7 +457,6 @@ textarea {
     border: 1px solid #00000010;
     margin-top: 1%;
     padding-left: 1%;
-    font-family: 'Calibri';
     color: #0D7011;
     font-size: 15px;
     resize: none;
@@ -443,13 +475,11 @@ textarea {
 
 .texto_footer {
     padding-top: 0.7%;
-    font-family: 'Calibri';
     color: #0D7011;
     font-size: 20px;
 }
 
 .container_3 {
-    font-family: 'Calibri';
     color: #0D7011;
     display: flex;
     flex-flow: row wrap;
@@ -479,6 +509,14 @@ a:hover {
 
 .login {
     background-color: #0D7011;
+}
+
+.espaco_secao{
+    margin-top: 400px;
+}
+
+.espaco_secao2{
+    margin-top: 300px;
 }
 
 /*responsividade*/
@@ -530,9 +568,18 @@ ul {
 
 
 @media only screen and (max-width: 1900px) {
+    .texto_nossa_missao {
+        text-align: start;
+    }
     .box_navegacao {
         width: 44%;
     }    
+    .box_avaliacoes {
+        height: 160px;
+    }
+    .icone_avaliacao {
+        position: relative;
+    }
 }
 
 @media only screen and (max-width: 1875px) {
@@ -569,6 +616,7 @@ ul {
     .box_navegacao {
         width: 32%;
     }    
+    
 }
 
 @media only screen and (max-width: 1650px) {
@@ -594,6 +642,13 @@ ul {
     .box_navegacao {
         width: 23%;
     }    
+}
+
+@media only screen and (max-width: 1411px) {
+    .icone_avaliacao_primeiro{
+        position: relative;
+        margin-left: 43px;
+    }
 }
 
 @media only screen and (max-width: 1381px) {
@@ -745,9 +800,116 @@ ul {
     .mobile-menu.active .bar:nth-child(3){
         transform: translateY(8px) rotate(-45deg);
     }
+
+    .secao_avaliacoes{
+        position: relative;
+        left:18.5%;
+        padding-bottom: 50px;
+    }
+
+    .titulo_avaliacoes, .texto_avaliacoes, .button_align_avaliacoes {
+        text-align: center;
+    }
+
+    .box_avaliacoes {
+        position: relative;
+        top: 200px; 
+        right:18.5%;
+        margin-right: 15px;
+        width:17%;
+    }
+
+    .espaco_secao {
+        margin-top: 250px;
+    }
+
+    .espaco_secao2 {
+        margin-top: 450px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .box_nosso_time{
+        height: 173px;
+    }
+
+}
+
+@media only screen and (max-width: 1153px) {
+    .box_avaliacoes{
+        margin-top: 80px;
+    }
+    .espaco_secao2{
+        margin-top: 480px;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    .box_nosso_time{
+        height: 174px;
+    }
+    .icon_time {
+        top: 2px;
+    }
+}
+
+@media only screen and (max-width: 1055px) {
+    .icon_time {
+        top: 3px;
+    }
+}
+
+@media only screen and (max-width: 952px) {
+    .icon_time{
+        left: 60px;
+    }
+}
+
+@media only screen and (max-width: 878px) {
+    .box_avaliacoes{
+        margin-top: 140px;
+        width:18%;
+        right:20%;
+    }
+    .espaco_secao2{
+        margin-top: 530px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .box_nossa_missao {
+        width: 50%;
+        left:25%;
+        padding-left: 7%;
+    }
+    .box_nosso_time {
+        width: 50%;
+        right: 1.3%;
+        padding-left: 7%;
+    }
+
+    .espaco_secao {
+        margin-top: 400px;
+    }
+
+    .icon_time{
+        left: -25px;
+    }
+}
+
+@media only screen and (max-width: 685px){
+    .secao_avaliacoes .button_align_avaliacoes .button_newsletter{
+        padding: 10px 10px;
+    }
+}
+
+@media only screen and (max-width: 625px){
+    .icon_time{
+        left:60px;
+    }
 }
 
 
 @media only screen and (min-width: 600px) {
-
-  }
+    
+}
