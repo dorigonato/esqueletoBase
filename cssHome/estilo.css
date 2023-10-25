@@ -189,13 +189,6 @@ a:hover {
     align-content: center;
     padding: 14px 20px;
 }
-@media screen and (max-width: 800px){
-    .container_1{
-        flex-direction: column;
-        height: 300px;
-        margin-bottom: 100px;
-    }
-}
 
 .produtoDestaque {
     flex-flow: 1;
@@ -217,23 +210,12 @@ a:hover {
     top: 0px;
     display: inline-block;
 }
-@media screen and (max-width: 900px){
-    .div1{
-        left: 35%;
-    }
-}
 
 .div2{
     position: absolute;
     left: 35%;
     top: 100px;
     display: inline-block;
-}
-
-@media screen and (max-width: 700px){
-    .div2{
-        left: 10%;
-    }
 }
 
 .categorias-de-produtos {
@@ -251,12 +233,6 @@ a:hover {
     flex-grow: 1;
     text-align: center;
 
-}
-
-@media screen and (max-width: 700px){
-    .categorias-de-produtos {
-        flex-direction: column;
-    }
 }
 
 .cp1{
@@ -361,13 +337,6 @@ h2{
 .container_3 div {
     flex-grow: 1;
 }
-
-@media screen and (max-width: 800px){
-    .container_3 {
-        flex-direction: column;
-    }
-}
-
 
 /*página de login */
 
@@ -685,6 +654,35 @@ input .acesso {
 
     .mobile-menu.active .bar:nth-child(3){
         transform: translateY(8px) rotate(-45deg);
+    }
+}
+
+@media screen and (max-width: 900px){
+    .div1{
+        left: 35%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .container_1{
+        flex-direction: column;
+        height: 300px;
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .div2{
+        left: 10%;
+    }
+    .categorias-de-produtos {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .container_3 {
+        flex-direction: column;
     }
 }
 
