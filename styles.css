@@ -431,6 +431,24 @@ main {
     padding-top: 3.5%;
 }
 
+.titulo_secao_contato {
+    text-align: left;
+    color: #0D7011;
+    padding-top: 5px;
+    font-size: 45px;
+    margin-left: 25%;
+}
+
+.texto_secao_contato {
+    text-align: left;
+    color: #0D7011;
+    font-weight: 200;
+    padding-top: 1%;
+    font-size: 25px;
+    margin-left: 25%; 
+    margin-top: 1%;
+}
+
 input {
     width: 18%;
     border-radius: 6px;
@@ -448,6 +466,16 @@ input:focus, textarea:focus{
     background-color: #2c2c2c1c;
     border: 1px solid green;
     outline: 0;
+}
+
+.titulo_contato input{
+    width: 60%;
+}
+
+.texto_secao_contato button.button_newsletter{
+    margin-left: 0%; 
+    margin-top: 3.4%; 
+    width: 20%;
 }
 
 textarea {
@@ -572,7 +600,7 @@ ul {
         text-align: start;
     }
     .box_navegacao {
-        width: 44%;
+        width: 42%;
     }    
     .box_avaliacoes {
         height: 160px;
@@ -807,7 +835,8 @@ ul {
         padding-bottom: 50px;
     }
 
-    .titulo_avaliacoes, .texto_avaliacoes, .button_align_avaliacoes {
+    .titulo_avaliacoes, .texto_avaliacoes, .button_align_avaliacoes,
+    .titulo_secao_contato, .texto_secao_contato, .titulo_contato{
         text-align: center;
     }
 
@@ -826,6 +855,20 @@ ul {
     .espaco_secao2 {
         margin-top: 450px;
     }
+
+    .titulo_secao_contato, .texto_secao_contato, 
+    .texto_secao_contato button.button_newsletter {
+        margin-left: 0;
+    }
+
+    .titulo_contato input , .titulo_contato textarea{
+        width: 30%;
+    }
+
+    .email_newsletter {
+        width: 30%;
+    }
+
 }
 
 @media only screen and (max-width: 1200px) {
