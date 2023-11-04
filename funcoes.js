@@ -44,11 +44,15 @@ function showSlides(n) {
 function validarEmail(){
   var email = document.querySelector('#email');
   var error = document.querySelector('#error-email');
+  var emailNews = document.querySelector('#emailNews');
+  var errorNews = document.querySelector('#error-email-newsletter');
   
   if(!email.checkValidity()){
     error.innerHTML = "Email invalido";  
   }
-   
+  if(!emailNews.checkValidity()){
+    errorNews.innerHTML = "Email invalido";  
+  }   
 }
 
 function redefinirMsg(){
