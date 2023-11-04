@@ -183,11 +183,11 @@
                 </div>
                 <a class="anterior" onclick="plusSlides(-1)">❮</a>
                 <a class="proximo" onclick="plusSlides(1)">❯</a>
-                <span class="ponto" onclick="currentSlide(1)" style="margin-left:-25%"></span> 
-                <span class="ponto" onclick="currentSlide(2)"></span> 
-                <span class="ponto" onclick="currentSlide(3)"></span>
-                <span class="ponto" onclick="currentSlide(4)"></span>
-                <span class="ponto" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(1)" style="margin-left:-25%"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
             </div>
         </div>
         <div class="espaco_secao"></div>
@@ -244,19 +244,27 @@
             </div>
             <div class="texto_secao_contato">
                 Entre em contato conosco
-                <div class="titulo_contato">
-                    <label for="nome"><b>Nome</b></label><br>
-                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
-                </div>
-                <div class="titulo_contato">
-                    <label for="email"><b>Email</b></label><br>
-                    <input type="email" id="email" name="email" placeholder="Digite seu email">
-                </div>
-                <div class="titulo_contato">
-                    <label for="comentario"><b>Messagem</b></label><br>
-                    <textarea rows="4" cols="50" id="comentario" name="comentario" placeholder="Digite sua mensagem aqui..."></textarea>
-                </div>
-                <button type="submit" class="button_newsletter">Enviar</button>
+                <form name="contato" onsubmit="return validateForm()">
+                    <div class="titulo_contato">
+                        <label for="nome"><b>Nome</b></label><br>
+                        <input type="text" id="nome" name="fnome" class="nome" placeholder="Digite seu nome">
+                        <br>
+                        <span id="error-nome"></span>
+                    </div>
+                    <div class="titulo_contato">
+                        <label for="email"><b>Email</b></label><br>
+                        <input type="email" id="email" name="femail" onblur="validarEmail()" onfocus="redefinirMsg()" placeholder="Digite seu email">
+                        <br>
+                        <span id="error-email"></span>
+                    </div>
+                    <div class="titulo_contato">
+                        <label for="comentario"><b>Messagem</b></label><br>
+                        <textarea rows="4" cols="50" id="comentario" name="fcomentario" class="comentario" placeholder="Digite sua mensagem aqui..."></textarea>
+                        <br>
+                        <span id="error-comentario"></span>
+                    </div>
+                    <button type="submit" class="button_newsletter">Enviar</button>
+                </form>
             </div>
         </div>
         <div class="body_right" style="margin-top: 2%;">
@@ -268,7 +276,8 @@
                 <div class="titulo_contato" style="padding-top: 1.2%;">
                     <label for="email"><b>Email</b></label><br>
                 </div>
-                <input type="email" id="email" class="email_newsletter" name="email" placeholder="Digite seu email" style="padding-left: 0.5%;">
+                <input type="email" id="email" class="email_newsletter" onblur="validarEmail()" onfocus="redefinirMsg()" name="email" placeholder="Digite seu email" style="padding-left: 0.5%;">
+                <span id="error-email"></span>
             </div>
             
             <div class="button_align_left">
