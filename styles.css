@@ -332,7 +332,7 @@ main {
     color: white;
 }
 
-.ponto {
+.dot {
     cursor: pointer;
     height: 10px;
     width: 10px;
@@ -344,7 +344,7 @@ main {
     transition: background-color 0.6s ease;
 }
 
-.ativo, .dot:hover {
+.active, .dot:hover {
     background-color: #717171;
 }
 
@@ -466,6 +466,20 @@ input:focus, textarea:focus{
     background-color: #2c2c2c1c;
     border: 1px solid green;
     outline: 0;
+}
+
+input.erro, .comentario.erro {
+    border: 1px solid red;
+}
+
+input:invalid{
+    border-color: red;
+}
+
+.titulo_contato span{
+    position: relative;
+    top: 4px;
+    color: red;
 }
 
 .titulo_contato input{
