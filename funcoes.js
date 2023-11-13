@@ -46,6 +46,8 @@ function validarEmail(){
   var error = document.querySelector('#error-email');
   var emailNews = document.querySelector('#emailNews');
   var errorNews = document.querySelector('#error-email-newsletter');
+  var emailFooter = document.querySelector('#emailFooter');
+  var errorFooter = document.querySelector('#error-email-footer');
   
   if(!email.checkValidity()){
     error.innerHTML = "Email invalido";  
@@ -53,12 +55,23 @@ function validarEmail(){
   if(!emailNews.checkValidity()){
     errorNews.innerHTML = "Email invalido";  
   }   
+  if(!emailFooter.checkValidity()){
+    errorFooter.innerHTML = ("Email Invalido"); 
+  }   
 }
 
 function redefinirMsg(){
   var error = document.querySelector('#error-email');
+  var errorNews = document.querySelector('#error-email-newsletter');
+  var errorFooter = document.querySelector('#error-email-footer');
   if (error.innerHTML == "Email invalido"){
     error.innerHTML = "";
+  }
+  if (errorNews.innerHTML == "Email invalido"){
+    errorNews.innerHTML = "";
+  }
+  if (errorFooter.innerHTML == "Email invalido"){
+    errorFooter.innerHTML = "";
   }
 }
 
