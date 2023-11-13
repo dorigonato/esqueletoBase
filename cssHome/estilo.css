@@ -294,7 +294,6 @@ body{
     position: fixed;
     bottom: 10px;
     right: 10px;
-<<<<<<< HEAD
 }
 h2{
     text-align: center;
@@ -678,6 +677,4 @@ input .acesso {
 
 @media only screen and (min-width: 600px) {
 
-=======
->>>>>>> 48c26afe93e772b96fd2b20d16c02a5e34ae91aa
 }
