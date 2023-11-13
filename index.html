@@ -8,8 +8,16 @@
     <meta name="keywords" content="programcao, html, css, javascript">
     <meta name="author" content="Dorival Rigonato Junior, Arthur Dabela Lanoa, Evaldo Moreira de Barros, Joao Felipe Freitas, Jose Roberto Neves Bezerra">
     <link rel="stylesheet" href="cssHome/estilo.css">
-    <title>Ecosun - Home</title>
-    <script src="funcoesAll.js" defer></script>
+    <link rel="stylesheet" href="cssHome/carousel.css">
+    <link rel="stylesheet" href="cssHome/slide.css">
+    <link rel="stylesheet" href="cssHome/cabecalhoHome.css">
+    <link rel="stylesheet" href="cssHome/footerHome.css">
+    <link rel="stylesheet" href="cssHome/formFooter.css">
+    <script src="JavaScript/carousel.js" defer></script>
+    <script src="JavaScript/slide.js" defer></script>
+    <script src="JavaScript/formFooter.js" defer></script>
+    <script ></script>
+    <title>Ecosun - Home Page</title>
 </head>
 <body>
     <header>
@@ -28,7 +36,7 @@
                     </div>
                     <ul class="nav-list">
                         <li class="nav-item">
-                            <a href="index.html" class="nav-link"><b>Início</b></a>
+                            <a href="index.html" class="nav-link">Início</a>
                         </li>
                         <li class="nav-item">
                             <a href="produtos.html" class="nav-link">Produtos</a>
@@ -55,122 +63,250 @@
         </div> 
         <div class="box_navegacao_mobile">
             <input type="text" name="procurar" placeholder="Procurar">
-        </div>  
+        </div> 
     </header>
     <main>
-        <div class="container_1">
 
-            <div class="produtoDestaque" >
 
-                <div>
-                    <h2>Produtos em Destaque 1</h2>
-                </div>
-                <div>
-                    <figure>
-                        <a href="/produtos.html"><img style="width: 180px;" src="img/burko_portátil_300Kw.png" alt=""></a>
-                        <figcaption style="font-size: 25px;">Painel Flexível Solar</figcaption>
-                    </figure> 
-                </div>
 
-            </div>
 
-            <div class="produtoDestaque" >
-
-                <div>
-                    <h2>Produtos em Destaque 2</h2>
-                </div>
-                <div>
-                    <figure>
-                        <a href="/produtos.html"><img style="width: 180px;" src="img/kit_painel_solar.png" alt=""></a>
-                        <figcaption style="font-size: 25px;">Kit Painel Solar</figcaption>
-                    </figure>
-                </div>
-
-            </div>
+        <div class="containerGeral">
             
-            <div class="produtoDestaque" >
-
-                <div>
-                    <h2>Produtos em Destaque 3</h2>
-                </div>
-                <div>
-                    <figure>
-                        <a href="/produtos.html"><img style="width: 180px;" src="img/burko_portátil_300Kw.png" alt=""></a>
-                        <figcaption style="font-size: 25px;">Painel Flexível Solar</figcaption>
-                    </figure>
+            <div class="containerProdutoDestaque">
+                <div class="cubo1">
+                    <div class="frenteEsquerdaTopo">
+                        <div class="frente" style="font-size: 2rem;">ECOSUN</div>
+                        <div class="esquerda" style="font-size: 1.45rem;">DROPSHIPING</div>
+                        <div class="topo"><img src="./img/logo.png" alt="logotipo"></div>
+                    </div>
                 </div>
 
-            </div>
-            
-        </div>
-
-
-        <div class="container_2">
-
-            <div class="div1">
-                <h2 style="font-size: 30px;">Como Funciona</h2>
-            </div>
-            
-            <div class="div2">
-                <video poster="/img/Placas solares.jpg" controls height="300px" disablepictureinpicture >
-                   <source src="/video/Func_01.mp4" type="video/mp4" >          
-                </video>
-            </div>
-
-        </div>
-
-        <div>
-            
-            <h2>Categorias de Produtos</h2>
-
-                <nav class="categorias-de-produtos">
+                <div class="produtoDestaque1" >
+                    <div>
+                        <h2>Produto em Destaque 1</h2>
+                        <figure>
+                            <a href="/produtos.html"><img style="width: 14rem;" src="img/burko_portátil_300Kw.png" alt=""></a>
+                            <figcaption style="font-size: 2rem;">Painel Flexível Solar</figcaption>
+                        </figure> 
+                    </div>
+                </div>
+                <div class="produtoDestaque2">
+                    <div>
+                        <h2>Produto em Destaque 2</h2><br>
+                        <figure>
+                            <a href="/produtos.html"><img style="width: 14rem;" src="img/kit_painel_solar.png" alt=""></a>
+                            <figcaption style="font-size: 2rem;">Kit Painel Solar</figcaption>
+                        </figure>
+                    </div>
+                </div>            
+                <div class="produtoDestaque3">
+                    <div>
+                        <h2>Produto em Destaque 3</h2><br>
+                        <figure>
+                            <a href="/produtos.html"><img style="width: 14rem;" src="img/burko_portátil_300Kw.png" alt=""></a>
+                            <figcaption style="font-size: 2rem;">Painel Flexível Solar</figcaption>
+                        </figure>
+                    </div>
                     
-                    <a href="/produtos.html" style="flex: 12%;" class="cp1">Painel Solar</a>
-                    <a href="/produtos.html" style="flex: 12%;"class="cp1">Inversor Solar</a>
-                    <a href="/produtos.html" style="flex: 12%;"class="cp1">Bateria Solar</a>
-                    <a href="/produtos.html" style="flex: 12%;"class="cp1">Iluminação Solar</a>
-                    <a href="/produtos.html" style="flex: 18%;"class="cp1">Sistema de Montagem</a>
+                </div>
 
-                </nav>
+                <div class="cubo2">
+                    <div class="frenteEsquerdaTopo">
+                        <div class="frente" style="font-size: 2rem;">ECOSUN</div>
+                        <div class="esquerda" style="font-size: 1.45rem;">DROPSHIPING</div>
+                        <div class="topo"><img src="./img/logo.png" alt="logotipo"></div>
+                    </div>
+                </div>            
+            </div>
+
+
+
+        
+        <div class="containerCarousel">
+            <div class="galleryWrapper">
+                <div class="gallery">
+                    <button class="arrowLeft control" aria-label="Previous image"><img src="img/setaEsquerda.png" alt="seta Esquerda"></button>
+                    <button class="arrowRight control" aria-label="Next image"><img src="img/setaDireita.png" alt="seta Direita"></button>
+                    <img src="img/kit_00.webp" alt="kit solar" class="carouselItem currentCarouselItem">
+                    <img src="img/kit_01.jpg" alt="kit solar" class="carouselItem">
+                    <img src="img/kit_02.jpg" alt="kit solar" class="carouselItem ">
+                    <img src="img/kit_03.jpg" alt="kit solar" class="carouselItem">
+                    <img src="img/kit_04.jpg" alt="kit solar" class="carouselItem">
+                    <img src="img/kit_05.jpg" alt="kit solar" class="carouselItem">
+                    <img src="img/kit_06.jpg" alt="kit solar" class="carouselItem">
+                    <img src="img/kit_07.jpg" alt="kit solar" class="carouselItem">
+                    <img src="img/kit_08.jpg" alt="kit solar" class="carouselItem">
+                    <img src="img/kit_09.png" alt="kit solar" class="carouselItem">
+                    <img src="img/kit_10.jpg" alt="kit solar" class="carouselItem">
+                    <img src="img/kit_11.jpg" alt="kit solar" class="carouselItem">
+                </div>
+
+            </div>
 
         </div>
 
-        <div>
+        
+            <div class="containerComoFuncionaCategoria">
+                <div class="comoFunciona">
+                    <div class="comoFunciona1">
+                        <h2>Como Funciona</h2>
+                    </div>
+                    <div class="comoFunciona2">    
+                        <video poster="/img/Placas solares.jpg" controls height= "220px" disablepictureinpicture >
+                        <source src="/video/Func_01.mp4" type="video/mp4" >       
+                        </video>
+                    </div>
+                </div>
 
-        <div>
-
-            <h2>Ebooks de Economia Verde</h2>
-            <div class="e-books">
-                <figure id="capa_1">
-                    <a href="https://drive.google.com/file/d/1Ga_BNJQEgzC2e2GO0Vms7YpkwBLmlrPn/view?usp=sharing" target="_blank"><img src="img/Capa_ESG_Um Guia Abrangente para Investidores.png" alt=""></a>
+                <div class="categoriaDeProdutos">
+                    <h2>Categorias de Produtos</h2>
                     
-                        <figcaption style="font-size: 25px;">ESG: Um guia abrangente para investidores</figcaption>
-                </figure>
+                    <ul>
+                        
+                            <li><a href="/produtos.html" style="flex: 12%;" class="cp1">Painel Solar</a></li>
+                            <li><a href="/produtos.html" style="flex: 12%;"class="cp1">Inversor Solar</a></li>
+                            <li><a href="/produtos.html" style="flex: 12%;"class="cp1">Bateria Solar</a></li>
+                            <li><a href="/produtos.html" style="flex: 12%;"class="cp1">Iluminação Solar</a></li>
+                            <li><a href="/produtos.html" style="flex: 18%;"class="cp1">Sistema de Montagem</a></li>
 
-                <figure id="capa_2">
-                    <a href="https://drive.google.com/file/d/18uYRit6sAhzBB3UG_5m2vImMpE7smzsb/view?usp=sharing" target="_blank"><img src="img/CAPA_ENERGIA SOLAR PARA INICIANTES_UM GUIA PASSO A PASSO.png" alt="">
+                    </ul>
 
-                        <figcaption style="font-size: 30px;">Energia solar para inciantes</figcaption>
-                </figure>
-
-                <figure id="capa_3">
-                    <a href="https://drive.google.com/file/d/12HOyWjIytAzRq6KS7ldtLWDwRZrOJ0tg/view?usp=sharing" target="_blank"><img src="img/Capa_Energias Renováveis_O Futuro Sustentável da Energia.png" alt="">
-
-                        <figcaption style="font-size: 25px;">Energias Renováveis: O futuro sustentável</figcaption>
-                </figure>
-
+                </div>
             </div>
+
+            <section class="slider">
+                <div class="slider-content">
+    
+                    <input type="radio" name="btn-radio" id="radio1">
+                    <input type="radio" name="btn-radio" id="radio2">
+                    <input type="radio" name="btn-radio" id="radio3">
+                    <input type="radio" name="btn-radio" id="radio4">
+                    <input type="radio" name="btn-radio" id="radio5">
+                    <input type="radio" name="btn-radio" id="radio6">
+                    <input type="radio" name="btn-radio" id="radio7">
+                    <input type="radio" name="btn-radio" id="radio8">
+                    <input type="radio" name="btn-radio" id="radio9">
+                    <input type="radio" name="btn-radio" id="radio10">
+                    <input type="radio" name="btn-radio" id="radio11">
+                    <input type="radio" name="btn-radio" id="radio12">
+    
+                    <div class="slide-box primeiro">
+                        <a href="produtos.html"><img src="img/kit_00.webp" alt="kit solar" class=""></a>
+                    </div>
+                    <div class="slide-box">  
+                        <img src="img/kit_01.jpg" alt="kit solar" class="img-desktop">
+                    </div>
+                    <div class="slide-box">
+                        <img src="img/kit_02.jpg" alt="kit solar" class="img-desktop">
+                    </div>
+                    <div class="slide-box">
+                        <img src="img/kit_03.jpg" alt="kit solar" class="img-desktop">
+                    </div>
+                    <div class="slide-box">
+                        <img src="img/kit_04.jpg" alt="kit solar" class="img-desktop">
+                    </div>
+                    <div class="slide-box">
+                        <img src="img/kit_05.jpg" alt="kit solar" class="img-desktop">
+                    </div>
+                    <div class="slide-box">
+                        <img src="img/kit_06.jpg" alt="kit solar" class="img-desktop">
+                    </div>
+                    <div class="slide-box">
+                        <img src="img/kit_07.jpg" alt="kit solar" class="img-desktop">
+                    </div>
+                    <div class="slide-box">
+                        <img src="img/kit_08.jpg" alt="kit solar" class="img-desktop">
+                    </div>
+                    <div class="slide-box">
+                        <img src="img/kit_09.png" alt="kit solar" class="img-desktop">
+                    </div>
+                    <div class="slide-box">
+                        <img src="img/kit_10.jpg" alt="kit solar" class="img-desktop">
+                    </div>
+                    <div class="slide-box">                    
+                        <img src="img/kit_11.jpg" alt="kit solar" class="img-desktop">
+                    </div>
+    
+                    <div class="nav-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                        <div class="auto-btn5"></div>
+                        <div class="auto-btn6"></div>
+                        <div class="auto-btn7"></div>
+                        <div class="auto-btn8"></div>
+                        <div class="auto-btn9"></div>
+                        <div class="auto-btn10"></div>
+                        <div class="auto-btn11"></div>
+                        <div class="auto-btn12"></div>
+    
+                    </div>
+    
+                    <div class="nav-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
+                        <label for="radio5" class="manual-btn"></label>
+                        <label for="radio6" class="manual-btn"></label>
+                        <label for="radio7" class="manual-btn"></label>
+                        <label for="radio8" class="manual-btn"></label>
+                        <label for="radio9" class="manual-btn"></label>
+                        <label for="radio10" class="manual-btn"></label>
+                        <label for="radio11" class="manual-btn"></label>
+                        <label for="radio12" class="manual-btn"></label>
+                    </div>
+    
+    
+    
+                </div>
+            </section>
+
+
+
+            <div class="containerEbook">
+                <h2>Ebooks de Economia Verde</h2>
+                
+                <div class="eBook_01">
+                    <figure>
+                        <a href="https://drive.google.com/file/d/1Ga_BNJQEgzC2e2GO0Vms7YpkwBLmlrPn/view?usp=sharing" target="_blank"><img src="img/Capa_ESG_Um Guia Abrangente para Investidores.png" alt="">
+                            
+                            <figcaption>ESG: Um guia abrangente <br> para investidores</figcaption></a>
+                        </figure>
+                    </div>
+                    <div class="eBook_02">
+                        <figure>
+                            <a href="https://drive.google.com/file/d/18uYRit6sAhzBB3UG_5m2vImMpE7smzsb/view?usp=sharing" target="_blank"><img src="img/CAPA_ENERGIA SOLAR PARA INICIANTES_UM GUIA PASSO A PASSO.png" alt="">
+                                
+                                <figcaption>Energia solar para inciantes</figcaption></a>
+                            </figure>
+                        </div>
+                        <div class="eBook_03">
+                            <figure>
+                                <a href="https://drive.google.com/file/d/12HOyWjIytAzRq6KS7ldtLWDwRZrOJ0tg/view?usp=sharing" target="_blank"><img src="img/Capa_Energias Renováveis_O Futuro Sustentável da Energia.png" alt="">
+                                    
+                                    <figcaption>Energias Renováveis: <br> O futuro sustentável</figcaption></a>
+                                </figure>
+                            </div>
+                            
+            </div>    
+            
+
         </div>
 
-        <div class="whats">
-            <a href="https://api.whatsapp.com/send?phone=5511976235600&text=Ol%C3%A1%20peguei%20o%20seu%20contato%20no%20site!"><img width="80px" src="/img/whatsapp.png"></a>
+            <div class="whats">
+                <a href="https://api.whatsapp.com/send?phone=5511976235600&text=Ol%C3%A1%20peguei%20o%20seu%20contato%20no%20site!" target="_blank"><img width="80px" src="/img/whatsapp.png"></a>
             </div>
-    </main>  
+
+    </main>
+
+
     <footer>
 
-        <div class="container_3">
+        <div class="rodape">
 
-            <div>
+            <div class="rodape-contato">
                 <h2>Contato</h2>
                 <p>Endereço: Rua Principal, 123</p>
                 <p>Telefone: 55 12 3456-7890</p>
@@ -178,34 +314,57 @@
                 <p>E-mail: contato@minhaloja.com</p>
             </div>
 
-            <div>
+            <div class="rodape-termos">
                 <ul style="list-style-type: none;">&nbsp;
-                    <li style="font-size: 19px; text-align: left;"><a style="color: green;" href="polPrivacidade.html">Política de Privacidade</a></li>&nbsp;
-                    <li style="font-size: 19px; text-align: left;"><a style="color: green;" href="termosDeUso.html">Termos de Uso</a></li>&nbsp;
+                    <li><a href="polPrivacidade.html">Política de Privacidade</a></li>&nbsp;
+                    <li><a href="termosDeUso.html">Termos de Uso</a></li>&nbsp;
                 </ul>
             </div>
 
-            <div>
-                <h2>Midias Sociais</h2>
-                <a href="#"><img width="30px" src="./img/facebook.png"></a>
-                <a href="#"><img width="30px" src="./img/instagram.png"></a>
-                <a href="https://www.linkedin.com/in/dorivalrigonatojunior" target="_blank"><img width="30px" src="./img/linkedin.png"></a>
+            <div class="midias-sociais">
+                <div>
+                    <h2>Midias Sociais</h2>
+                </div>
+                <div class="icones" >
+                    <a href="#"><img width="3rem" src="./img/facebook.png"></a>
+                    <a href="#"><img width="3rem" src="./img/instagram.png"></a>
+                    <a href="https://www.linkedin.com/in/dorivalrigonatojunior" target="_blank"><img width="3rem" src="./img/linkedin.png"></a>
+                </div>
             </div>
 
-            <div>
+            <div class="Newsletter">
                 <h2>Newsletter</h2>
-                <a style="color: green;" href="#"><h3>Assine nossos Boletins Informativos</h3></a>
+                <a href="#"><h3>Assine nossos Boletins Informativos</h3></a>
             </div>
             
-            <div>  
-                <form>
-                    <label style="color: green; font-size: 20px; text-align: center;" for="email"><h3>Cadastre-se:</h3></label>
-                    <input id="email" type="email" placeholder="Digite Seu e-mail aqui" required style="background-color: #D8D8D8; font-size: 19px;">
-                    <input  type="submit" value="Assinar">
+            <div class="cadestre-se">
+                <div>
+                    <h2>CADESTRE-SE</h2>
+                </div>
+                
+                <form id="form" class="form">
+
+                    <div class="form-name">
+                        <label for="name"><h2>Nome:</h2></label>                       
+                        <input id="name" name="name" type="text" placeholder="Digite seu nome aqui">                        
+                    </div>
+
+                    <div class="form-email">                        
+                            <label for="email"><h2>Email:</h2></label>
+                            <input id="email" name="email" type="email" placeholder="Digite Seu e-mail aqui">                       
+                    </div>
+                    <div class="form-botao">
+                        <button type="submit">Cadastrar</button>                        
+                    </div>
+
                 </form>
             </div>
+            <div class="copy">
+                <p>&copy; 2023 Todos os direitos reservados.</p>
+            </div>
         </div>
-        <p>&copy; 2023 Todos os direitos reservados.</p>
     </footer>
+
 </body>
+
 </html>

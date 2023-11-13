@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+section.slider {
+    margin-top: 5rem;
+    margin: 0 0;
+    max-width: 120rem;
+    height: 29rem;
+    padding: 0;
+    overflow: hidden;
+    background-color: #d7d7d8;
+
+}
+
+.slider-content{
+    background-color: #d7d7d8;
+    width: 230%;
+    height: 25rem;
+    display: flex;
+    & input{
+        display: none;
+    }
+}
+
+.slide-box{
+    background-color: #d7d7d8;
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 2s;
+    & img{
+        width: 70%;
+        height: 25rem;
+    }
+}
+.nav-manual,
+.nav-auto {
+    position: absolute;
+    width: 100%;
+    margin-top: 21%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-manual .manual-btn,
+.nav-auto div {
+    border: 0.1rem solid green;
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s;
+    &:not(:last-child){
+        margin-right: 1.5rem;
+    }
+    &:hover{
+        background-color: green;
+    }
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1{
+    background-color: green;
+}
+#radio2:checked ~ .nav-auto .auto-btn2{
+    background-color: green;
+}
+#radio3:checked ~ .nav-auto .auto-btn3{
+    background-color: green;
+}
+#radio4:checked ~ .nav-auto .auto-btn4{
+    background-color: green;
+}
+#radio5:checked ~ .nav-auto .auto-btn5{
+    background-color: green;
+}
+#radio6:checked ~ .nav-auto .auto-btn6{
+    background-color: green;
+}
+#radio7:checked ~ .nav-auto .auto-btn7{
+    background-color: green;
+}
+#radio8:checked ~ .nav-auto .auto-btn8{
+    background-color: green;
+}
+#radio9:checked ~ .nav-auto .auto-btn9{
+    background-color: green;
+}
+#radio10:checked ~ .nav-auto .auto-btn10{
+    background-color: green;
+}
+#radio11:checked ~ .nav-auto .auto-btn11{
+    background-color: green;
+}
+#radio12:checked ~ .nav-auto .auto-btn12{
+    background-color: green;
+}
+
+#radio1:checked ~ .primeiro{
+    margin-left: 0%;
+}
+#radio2:checked ~ .primeiro{
+    margin-left: -25%;
+}
+#radio3:checked ~ .primeiro{
+    margin-left: -50%;
+}
+#radio4:checked ~ .primeiro{
+    margin-left: -75%;
+}
+#radio5:checked ~ .primeiro{
+    margin-left: -100%;
+}
+#radio6:checked ~ .primeiro{
+    margin-left: -125%;
+}
+#radio7:checked ~ .primeiro{
+    margin-left: -150%;
+}
+#radio8:checked ~ .primeiro{
+    margin-left: -175%;
+}
+#radio9:checked ~ .primeiro{
+    margin-left: -200%;
+}
+#radio10:checked ~ .primeiro{
+    margin-left: -225%;
+}
+#radio11:checked ~ .primeiro{
+    margin-left: -250%;
+}
+#radio12:checked ~ .primeiro{
+    margin-left: -275%;
+}

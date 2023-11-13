@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.containerCarousel {
+    position: relative;
+    padding: 1.5rem;
+    max-width: 120rem;
+    margin: 0;
+    background-color: #d7d7d8;
+}
+
+.galleryWrapper {
+    overflow-x: hidden;
+
+}
+
+.gallery {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 2.5rem;
+}
+
+.arrowLeft,
+.arrowRight {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: 0;
+    font-size: 2rem;
+    line-height: 25rem;
+    max-width: 50rem;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(to left, transparent 0%, black 200%);
+    opacity: 0.1;
+    transition: all 600ms ease-in-out;
+
+    &:hover{
+        opacity: 1;
+    }
+}
+.arrowRight {
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, transparent 0%, black 200%);
+}
+
+.carouselItem {
+    width: 25rem;
+    height: 25rem;
+    flex-shrink: 0;
+    opacity: 0.4;
+    border: 0.5rem #d7d7d8; solid;
+    transition: all 600ms ease-in-out;
+}
+.currentCarouselItem{
+    opacity: 1;
+    border: 0.5rem solid green;
+    box-shadow: 0 0 1rem green;
+}

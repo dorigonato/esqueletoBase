@@ -1,0 +1,158 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.rodape {
+    width: 120rem;
+    display: grid;
+    border-top: solid green 0.1rem;
+    column-gap: 0.5rem;
+    row-gap: 0.2rem;
+    grid-template-rows: 12rem  3rem;
+    grid-template-columns: repeat(5, 1fr);
+
+    & div {
+        /* width: 24rem;
+        height: 12rem; */
+    
+    }
+    & .rodape-contato{
+        & h2 {
+            font-size: 2rem;
+            text-align: center;
+            color: green;
+        }
+        & p {
+            font-size: 1.2rem;
+            text-align: center;
+            color: green;
+        }
+    }
+    & .rodape-termos {
+        display: flex;
+        height: 8rem;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        & a {
+            text-decoration: none;
+            font-weight: 700;
+            color: green;
+            &:hover{
+                text-decoration: underline;
+                background-color: green;
+                color: white;
+                padding: 0.2rem;
+                box-shadow: 0 0 1rem;
+
+            }
+        }
+    }
+    & .midias-sociais {
+        height: 10rem;  
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 3rem;
+        color: green;
+        & h2 {
+            align-items: flex-start;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+        & .icones {
+            text-align: center;
+            align-items: center;
+
+
+            & img{
+                width: 3rem;
+                text-align: center;
+                gap: 2rem;
+            }
+        }
+    }
+    & .Newsletter {
+        height: 8rem;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 2.5rem;
+        gap: rem;
+        & h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: green;
+        }
+        & a {
+            text-decoration: none;
+            font-size: 1.2rem;
+            text-align: center;
+            color: green;
+            &:hover{
+                text-decoration: underline;
+                background-color: green;
+                color: white;
+                padding: 0.2rem;
+                box-shadow: 0 0 1rem;
+                border-radius: 1.5rem;
+
+            }
+        }
+    }
+    & .cadestre-se {
+        & h2{
+            text-align: center;
+            color: green;
+            margin-bottom: 1rem;
+        }
+
+        & .form{
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            align-items: center;
+            & input{
+                border-radius: 1.5rem;
+                width: 16rem;
+                border: none;
+                &::placeholder{
+                    color: rgba(10, 172, 10, 0.359);
+                }
+            }
+            & button{
+                border-radius: 1.5rem;
+                width: 16rem;
+                border: rgb(202, 200, 200) solid 0.2rem;
+                margin-top: 1rem;
+                margin-bottom: 2rem;
+                color: rgb(116, 132, 116);
+            }
+
+
+        }
+
+
+        
+    }
+    & .copy {
+        text-align: center;
+        grid-column: 3 / 4;
+        /* grid-column-start: 2;
+        grid-column-end: 5; */
+    }
+   
+
+
+
+    
+}

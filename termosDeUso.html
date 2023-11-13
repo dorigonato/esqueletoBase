@@ -7,7 +7,8 @@
     <meta name="desccription" content="Projeto Ecosun Dropshipping">
     <meta name="keywords" content="programcao, html, css, javascript">
     <meta name="author" content="Dorival Rigonato Junior, Arthur Dabela Lanoa, Evaldo Moreira de Barros, Joao Felipe Freitas, Jose Roberto Neves Bezerra">
-    <link rel="stylesheet" href="cssSustentabilidade/estiloSust.css">
+    <link rel="stylesheet" href="cssHome/estiloSust.css">
+    <link rel="stylesheet" href="cssHome/footerHome.css">
     <title>Ecosun - Termos e condições</title>
     <script src="funcoesAll.js" defer></script>
 </head>
@@ -55,7 +56,7 @@
         </div> 
         <div class="box_navegacao_mobile">
             <input type="text" name="procurar" placeholder="Procurar">
-        </div>  
+        </div> 
     </header>
     <main>
     <h2>Termos e condições</h2>
@@ -112,10 +113,9 @@
 
     </main><br><br>
     <footer>
+        <div class="rodape">
 
-        <div class="container_3">
-
-            <div>
+            <div class="rodape-contato">
                 <h2>Contato</h2>
                 <p>Endereço: Rua Principal, 123</p>
                 <p>Telefone: 55 12 3456-7890</p>
@@ -123,34 +123,55 @@
                 <p>E-mail: contato@minhaloja.com</p>
             </div>
 
-            <div>
+            <div class="rodape-termos">
                 <ul style="list-style-type: none;">&nbsp;
-                    <li style="font-size: 19px; text-align: left;"><a style="color: green;" href="polPrivacidade.html">Política de Privacidade</a></li>&nbsp;
-                    <li style="font-size: 19px; text-align: left;"><a style="color: green;" href="termosDeUso.html">Termos de Uso</a></li>&nbsp;
+                    <li><a href="polPrivacidade.html">Política de Privacidade</a></li>&nbsp;
+                    <li><a href="termosDeUso.html">Termos de Uso</a></li>&nbsp;
                 </ul>
             </div>
 
-            <div>
-                <h2>Midias Sociais</h2>
-                <a href="#"><img width="30px" src="./img/facebook.png"></a>
-                <a href="#"><img width="30px" src="./img/instagram.png"></a>
-                <a href="https://www.linkedin.com/in/dorivalrigonatojunior" target="_blank"><img width="30px" src="./img/linkedin.png"></a>
+            <div class="midias-sociais">
+                <div>
+                    <h2>Midias Sociais</h2>
+                </div>
+                <div class="icones" >
+                    <a href="#"><img width="3rem" src="./img/facebook.png"></a>
+                    <a href="#"><img width="3rem" src="./img/instagram.png"></a>
+                    <a href="https://www.linkedin.com/in/dorivalrigonatojunior" target="_blank"><img width="3rem" src="./img/linkedin.png"></a>
+                </div>
             </div>
 
-            <div>
+            <div class="Newsletter">
                 <h2>Newsletter</h2>
-                <a style="color: green;" href="#"><h3>Assine nossos Boletins Informativos</h3></a>
+                <a href="#"><h3 style="font-size: 1.4rem;">Assine nossos Boletins Informativos</h3></a>
             </div>
             
-            <div>  
-                <form>
-                    <label style="color: green; font-size: 20px; text-align: center;" for="email"><h3>Cadastre-se:</h3></label>
-                    <input id="email" type="email" placeholder="Digite Seu e-mail aqui" required style="background-color: #D8D8D8; font-size: 19px;">
-                    <input  type="submit" value="Assinar">
+            <div class="cadestre-se">
+                <div>
+                    <h2 style="font-size: 1.8rem;">CADESTRE-SE</h2>
+                </div>
+                
+                <form id="form" class="form">
+
+                    <div class="form-name">
+                        <label for="name"><h2>Nome:</h2></label>                       
+                        <input id="name" name="name" type="text" placeholder="Digite seu nome aqui">                        
+                    </div>
+
+                    <div class="form-email">                        
+                            <label for="email"><h2>Email:</h2></label>
+                            <input id="email" name="email" type="email" placeholder="Digite Seu e-mail aqui">                       
+                    </div>
+                    <div class="form-botao">
+                        <button type="submit">Cadastrar</button>                        
+                    </div>
+
                 </form>
             </div>
+            <div class="copy">
+                <p>&copy; 2023 Todos os direitos reservados.</p>
+            </div>
         </div>
-        <p style="text-align: center; font-size: 10px;">&copy; 2023 Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
