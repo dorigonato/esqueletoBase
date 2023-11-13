@@ -548,6 +548,17 @@ textarea {
     padding: 40px;
 }
 
+footer p{
+    color: #0D7011;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;        
+    width: 100%;
+    background-color: #a2aea4;
+    margin: 0;
+}
+
 /*outras estilizações*/
 
 a:link {
@@ -568,6 +579,10 @@ a:hover {
 
 .espaco_secao2{
     margin-top: 300px;
+}
+
+.quick-links li{
+    text-align: left;
 }
 
 /*responsividade*/
@@ -686,6 +701,13 @@ ul {
     }    
     .anterior {
         left: 51%;
+    }
+}
+
+@media only screen and (max-width: 1614px) {
+    .container_3 .footer_contato{
+        text-align: center;
+        width: 30%;
     }
 }
 
@@ -960,6 +982,19 @@ ul {
 
     .icon_time{
         left: -25px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .container_3 {
+        text-align: center;
+        flex-direction: column;
+    }
+    .container_3 div, .container_3 .footer_contato{
+        width: 50%;
+    }
+    .quick-links li{
+        text-align: center;
     }
 }
 
