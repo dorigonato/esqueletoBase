@@ -60,12 +60,15 @@
 <main>
     <div class="login">
         <h1>Faça login</h1>
-        <form>         
+        <form name="login" onsubmit="return validateForm()">         
             <div class="id-senha">
                 <label for="email">E-mail</label> <img src="" alt=""> <img src="img/emaillog.png" alt="Email">
-                <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+                <input type="email" name="email" id="email" class="femail" placeholder="Digite seu email" onblur="validarEmail()" onfocus="redefinirMsg()" onkeydown="validateForm()">
+                <br>
+                <span id="error-email"></span>
+                <br>
                 <label for="senha">Senha</label> <img src="img/senha.png" alt="Cadeado"> 
-                <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required> 
+                <input type="password" name="senha" id="senha" placeholder="Digite sua senha"> 
             </div>
             <div class="lembrar-senha">
                 <input type="checkbox" Lembrar senha>

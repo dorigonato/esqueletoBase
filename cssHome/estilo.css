@@ -439,6 +439,16 @@ input .acesso {
     align-items: center;
 }
 
+.login input.erro {
+    border: 1px solid red;
+}
+
+.id-senha span {
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    top:-5px;
+}
+
 @media only screen and (max-width: 1900px) {
     .box_navegacao {
         width: 44%;
