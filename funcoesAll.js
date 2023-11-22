@@ -45,3 +45,15 @@ function validateForm() {
     loginEmail.classList.remove("erro");
   }
 }
+
+function rastrear() {
+  var tipoRastreio = document.querySelector('#tipo-rastreamento');
+  var option = tipoRastreio.value;
+  var labelRastreio = document.querySelector('#label-rastreamento');
+  if (option == "numero-rastreamento") {
+    labelRastreio.innerHTML = "Número do rastreio:";
+  }
+  if (option == "numero-pedido") {
+    labelRastreio.innerHTML = "Número do pedido:";
+  } 
+}
