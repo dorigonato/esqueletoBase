@@ -7,16 +7,9 @@
     <meta name="desccription" content="Projeto Ecosun Dropshipping">
     <meta name="keywords" content="programcao, html, css, javascript">
     <meta name="author" content="Dorival Rigonato Junior, Arthur Dabela Lanoa, Evaldo Moreira de Barros, Joao Felipe Freitas, Jose Roberto Neves Bezerra">
-    <link rel="stylesheet" href="cssHome/estilo.css">
-    <link rel="stylesheet" href="cssHome/carousel.css">
-    <link rel="stylesheet" href="cssHome/slide.css">
-    <link rel="stylesheet" href="cssHome/cabecalhoHome.css">
-    <link rel="stylesheet" href="cssHome/footerHome.css">
-    <link rel="stylesheet" href="cssHome/formFooter.css">
-    <script src="JavaScript/carousel.js" defer></script>
-    <script src="JavaScript/slide.js" defer></script>
+    <link rel="stylesheet" href="cssRastreamento/styles.css">
+    <link rel="icon" href="img/logo-favicon.svg" type="image/png">
     <script src="funcoesAll.js" defer></script>
-    <script src="JavaScript/formFooter.js" defer></script>
     <title>Ecosun - Rastreamento de Pedido</title>
 </head>
 <body>
@@ -70,40 +63,37 @@
             <h2>Escolha como deseja rastrear seu pedido:</h2>
             <form id="rastreamento-form">
                 <label for="tipo-rastreamento">Selecione o tipo de rastreamento:</label>
-                <select id="tipo-rastreamento" name="tipo-rastreamento" required>
-                    <option value="numero-rastreamento">Número de Rastreamento</option>
-                    <option value="numero-pedido">Número do Pedido</option>
+                <br><br>
+                <select id="tipo-rastreamento" name="tipo-rastreamento" required onchange="rastrear()">
+                    <option value="numero-rastreamento">Número de rastreamento</option>
+                    <option value="numero-pedido">Número do pedido</option>
                 </select><br><br>
-                <label for="numero-rastreamento-pedido">Número de Rastreamento ou Número do Pedido:</label>
+                <label for="numero-rastreamento-pedido" id="label-rastreamento">Número de rastreamento:</label>
+                <br>
                 <input type="text" id="numero-rastreamento-pedido" name="numero-rastreamento-pedido" required>
+                <br><br>
                 <button type="submit">Rastrear</button>
             </form>
         </section>
-        <section>
-            <h2>Detalhes do Pedido</h2>
-            <ol style="font-size: 20px;">
-                <li>Nome do Produto: Nome do Produto Exemplo</li>
-                <li>Número do Pedido: #123456789</li>
-                <li>Data de Compra: 20 de setembro de 2023</li>
-                <li>Endereço de Entrega: Rua Exemplo, Cidade, Estado, CEP 12345-678</li>
-            </ol>
-        </section>
-        <section id="resultado-rastreamento">
-            <h2>Resultado do Rastreamento:</h2>
-            <div id="resultado-texto">                
-                <p style="text-align: center; font-size: 30px;">Nenhum resultado de rastreamento disponível no momento.</p><br>            
-            </div>
-        </section>
+        <h2>Detalhes do Pedido:</h2>
+        <div class="pedido">
+            <ul>
+                <li>Nome do Produto: Nome do Produto Exemplo</li><br>
+                <li>Número do Pedido: #123456789</li><br>
+                <li>Data de Compra: 20 de setembro de 2023</li><br>
+                <li>Endereço de Entrega: Rua Exemplo, Cidade, Estado, CEP 12345-678</li><br>
+            </ul>
+        </div>
     </main>        
     <footer>
         <div class="container_3">        
             <div id="contact-info">
-                <h2>Contato</h2>
+                <h2 style="text-align: center;">Contato</h2>
                 <p>Endereço: Rua Principal, 123</p>
                 <p>Telefone: (12) 3456-7890</p>
                 <p>E-mail: contato@minhaloja.com</p>
             </div>
-            <div id="quick-links" style="margin-top: 90px;">
+            <div id="quick-links" style="margin-top: 2%;">
                 <ul style="list-style-type: none;">&nbsp;
                     <li style="font-size: 19px; text-align: left;"><a style="color: green;" href="polPrivacidade.html">Política de Privacidade</a></li>&nbsp;
                     <li style="font-size: 19px; text-align: left;"><a style="color: green;" href="termosDeUso.html">Termos de Uso</a></li>&nbsp;
@@ -120,12 +110,12 @@
                 <h2>Newsletter</h2>
                 <a style="color: green;" href="#"><h3>Assine nossos Boletins Informativos</h3></a>            
             </div>
-            <div style="margin-top: 45px;">  
+            <div style="margin-top: 2%; text-align: center;">  
                 <form>
-                    <label style="color: green; font-size: 40px;" for="email"><b>Cadastre-se:</b></label><br><br>
-                    <input id="email" type="email" placeholder="Digite Seu e-mail aqui" style="background-color: #D8D8D8;; font-size: 19px;">
+                    <label style="color: green; font-size: 24px;" for="email"><b>Cadastre-se:</b></label><br><br>
+                    <input id="email" type="email" placeholder="Digite seu email aqui" style="background-color: #D8D8D8; font-size: 14px; width: 65%;">
                     <br><br>
-                    <input style="font-size: 20px; margin-left: auto; margin-right: auto;" type="submit" value="Assinar">                
+                    <input style="font-size: 20px; margin-left: auto; margin-right: auto; width: 65%;" type="submit" value="Assinar">                
                 </form>
             </div>
         </div>
