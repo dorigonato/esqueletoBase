@@ -6,6 +6,7 @@
 
 html{
     font-size: 62.5%;
+    padding-left: 3rem;
 }
 
 section.slider {
@@ -16,6 +17,9 @@ section.slider {
     padding: 0;
     overflow: hidden;
     background-color: #d7d7d8;
+    border-bottom: green 0.1rem solid;
+    border-top: green 0.1rem solid;
+    padding-top: 0.5rem;
 
 }
 
