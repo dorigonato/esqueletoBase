@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="cssProdutos/style.css">
     <title>Catalogo de Produtos</title>
     <script src="funcoesAll.js" defer></script>
+    <link rel="icon" href="img/logo-favicon.svg" type="image/png">
 </head>
 <body>
     <header>
@@ -58,95 +59,73 @@
         </div>  
     </header>
     <main>
-          <div class="caixa-top">
-            <!-- <p>Produtos</p> -->
-            <!-- <img src="img/logo.png" alt="logo-favicon"> -->
-           </div>
-   <div class="imagens">
-        <div class="img_01">
+    <h1>Produtos</h1> 
+    <div class="separador_secao"></div>
+    <div class="imagens">
+        <div class="img_produtos">
             <img src="./img/inversosolar_drivebombarsolar 7.5.png" alt="img1">
             <p>Inversor Solar em <b>PROMOÇÃO</b><br><del> De R$ 2.350 </del></br>Por R$ 1.852</p>
         </div>
-
-        <div class="img_02">
-            <img src="./img/kit_gerador_solar.png" alt="" height="297" width="177">
+        <div class="img_produtos">
+            <img src="./img/kit_gerador_solar.png" alt="img2">
             <p>Kit Gerador Solar<b> PROMOÇÃO</b><br><del> De R$ 5.350 </del><br>Por R$ 4.252</p>
         </div>
-
-        <div class="img_03">
-            <img src="./img/burko_portátil_300Kw.png" alt="" height="297" width="177">
+        <div class="img_produtos">
+            <img src="./img/burko_portátil_300Kw.png" alt="img3">
             <p>Burko Portátil 300W <b>PROMOÇÃO</b><br><del> De R$ 850 </del><br>Por R$ 552</p>
         </div>
-
-        <div class="img_04">
-            <img src="./img/Homesen_carregador.png" alt="" height="297" width="177">
+        <div class="img_produtos">
+            <img src="./img/Homesen_carregador.png" alt="img4">
             <p>Homesen carregador <b>PROMOÇÃO</b><br><del> De R$ 350 </del><br>Por R$ 252</p>
         </div>
-
-        <div class="img_05">
-            <img src="./img/kit_gerador_solar.png" alt="" height="297" width="177">
+        <div class="img_produtos">
+            <img src="./img/kit_gerador_solar.png" alt="img5">
             <p>Kit Gerador Solar <b>PROMOÇÃO</b><br><del> De R$ 7.350 </del><br>Por R$ 5.852</p>
         </div>
-        <div class="img_06">
-            <img src="./img/kit_painel_solar.png" alt="" height="297" width="177">
+        <div class="img_produtos">
+            <img src="./img/kit_painel_solar.png" alt="img6">
             <p>Kit Painel Solar <b>PROMOÇÃO</b><br><del> De R$ 6.350 </del><br>Por R$ 4.852</p>
         </div>
     </div>
-  
-   
-        </main>
-   
+    </main>
     <footer>
         <div class="container_3">
-        
             <div id="contact-info">
-                <h2>Contato</h2>
+                <h2 style="text-align: center;">Contato</h2>
                 <p>Endereço: Rua Principal, 123</p>
                 <p>Telefone: (12) 3456-7890</p>
                 <p>E-mail: contato@minhaloja.com</p>
             </div>
-
-            <div id="quick-links" style="margin-top: 90px;">
-
+            <div id="quick-links" class="quick-links" style="margin-top: 2%;">
                 <ul style="list-style-type: none;">&nbsp;
-                    <li style="font-size: 19px; text-align: left;"><a style="color: green;" href="polPrivacidade.html">Política de Privacidade</a></li>&nbsp;
-                    <li style="font-size: 19px; text-align: left;"><a style="color: green;" href="termosDeUso.html">Termos de Uso</a></li>&nbsp;
+                    <li style="font-size: 19px;"><a style="color: green;" href="polPrivacidade.html">Política de Privacidade</a></li>&nbsp;
+                    <li style="font-size: 19px;"><a style="color: green;" href="termosDeUso.html">Termos de Uso</a></li>&nbsp;
                     <!-- <li style="font-size: 18px; text-align: left;"><a style="color: green;" href="#">FAQ</a></li> -->
                 </ul>
-
             </div>
-
-            <div id="social-media">
-                <h2>Midias</h2>
+            <div id="social-media" style="text-align: center;">
+                <h2 style="text-align: center;">Midias</h2>
                 <a href="#"><img width="30px" src="./img/facebook.png"></a>
                 <a href="#"><img width="30px" src="./img/instagram.png"></a>
                 <a href="https://www.linkedin.com/in/dorivalrigonatojunior" target="_blank"><img width="30px" src="./img/linkedin.png"></a>
             </div>
-
             <div id="newsletter-form">
-                <h2>Newsletter</h2>
+                <h2 style="text-align: center;">Newsletter</h2>
                 <a style="color: green;" href="#"><h3>Assine nossos Boletins Informativos</h3></a>
-            
             </div>
-
-            <div style="margin-top: 45px;">  
+            <div style="margin-top: 2%; text-align: center;" class="footer_contato">  
                 <form>
-
-                    <label style="color: green; font-size: 40px;" for="email"><b>Cadastre-se:</b></label><br><br>
-                    <input id="email" type="email" placeholder="Digite Seu e-mail aqui" style="background-color: #D8D8D8;; font-size: 19px; width: auto;">
-                    <br><br>
-                    <input style="font-size: 20px; margin-left: auto; margin-right: auto;" type="submit" value="Assinar">
-                
+                    <label style="color: green; font-size: 24px;" for="email"><b>Contato</b></label><br><br>
+                    <input id="email" type="email" id="emailFooter" class="email_footer" onblur="validarEmail()" onfocus="redefinirMsg()" placeholder="Digite seu email aqui" style="background-color: #D8D8D8; font-size: 19px; width: 63%;">
+                    <br>
+                    <span id="error-email-footer"></span>
+                    <br>
+                    <input style="font-size: 20px; width: 65%;" type="submit" value="Assinar">
+                    <br>
                 </form>
             </div>
-
-
-
-        </div>
+        </div> 
         <p>&copy; 2023 Todos os direitos reservados.</p>
-
-     
     </footer>
-
 </body>
 </html>
