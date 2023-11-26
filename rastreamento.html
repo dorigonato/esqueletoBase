@@ -59,30 +59,24 @@
         </div>  
     </header>
     <main>
-        <section>
+        <div class="pedido_dados">
             <h2>Escolha como deseja rastrear seu pedido:</h2>
             <form id="rastreamento-form">
                 <label for="tipo-rastreamento">Selecione o tipo de rastreamento:</label>
                 <br><br>
-                <select id="tipo-rastreamento" name="tipo-rastreamento" required onchange="rastrear()">
-                    <option value="numero-rastreamento">Número de rastreamento</option>
+                <select id="tipo-rastreamento" name="tipo-rastreamento" required onchange="tipo_rastreio()">
+                    <option class="option-teste" value="numero-rastreamento">Número de rastreamento</option>
                     <option value="numero-pedido">Número do pedido</option>
                 </select><br><br>
                 <label for="numero-rastreamento-pedido" id="label-rastreamento">Número de rastreamento:</label>
                 <br>
-                <input type="text" id="numero-rastreamento-pedido" name="numero-rastreamento-pedido" required>
+                <input type="text" id="numero-rastreamento-pedido" name="numero-rastreamento-pedido">
                 <br><br>
-                <button type="submit">Rastrear</button>
+                <button class="button_rastrear" type="button" onclick="rastrear()">Rastrear</button>
             </form>
-        </section>
-        <h2>Detalhes do Pedido:</h2>
+        </div>
         <div class="pedido">
-            <ul>
-                <li>Nome do Produto: Nome do Produto Exemplo</li><br>
-                <li>Número do Pedido: #123456789</li><br>
-                <li>Data de Compra: 20 de setembro de 2023</li><br>
-                <li>Endereço de Entrega: Rua Exemplo, Cidade, Estado, CEP 12345-678</li><br>
-            </ul>
+            
         </div>
     </main>        
     <footer>
