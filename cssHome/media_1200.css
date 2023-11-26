@@ -1,0 +1,36 @@
+/* 1em = 16px   ou seja  1320 / 16 = 82.5*/
+@media all and (max-width: 1200px) {
+    .containerEbook{
+        width: 100rem;
+        display: block;
+    }
+    .rodape {
+        width: 1000rem;
+        display: block;
+    }
+    .containerProdutoDestaque{
+        width: 120rem;
+        justify-content: center;
+        grid-auto-flow: row;
+
+    }
+    .containerComoFuncionaCategoria{
+        width: 100rem;
+        justify-content: center;
+        grid-auto-flow: row;
+    }
+    .containerCarousel{
+        width: 90rem;
+        margin-right: 0rem;
+        margin-left: 5rem;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .slider{
+        width: 100rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}

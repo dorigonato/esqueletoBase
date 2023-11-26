@@ -1,0 +1,31 @@
+/* 1em = 16px   ou seja  1320 / 16 = 82.5*/
+@media all and (max-width: 1320px) {
+    .containerEbook{
+        width: 120rem;
+    }
+    .rodape {
+        max-width: 120rem;
+    }
+    .containerProdutoDestaque{
+        width: 120rem;
+    }
+    .containerComoFuncionaCategoria{
+        width: 120rem;
+    }
+    .containerCarousel{
+        width: 120rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .slider{
+        width: 120rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+
