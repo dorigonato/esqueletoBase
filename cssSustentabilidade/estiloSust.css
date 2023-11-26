@@ -234,6 +234,17 @@ h3{
     flex-grow: 1;
 }
 
+.whats {
+    background: green;
+    border-radius: 20%;
+    color: white;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 60px;
+    left: 15px;
+}
+
 input {
     width: 18%;
     border-radius: 6px;

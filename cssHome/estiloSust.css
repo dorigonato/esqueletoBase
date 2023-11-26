@@ -221,6 +221,17 @@ h3{
     /* border: 2px solid green; */
 }
 
+.whats {
+    background: green;
+    border-radius: 20%;
+    color: white;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 60px;
+    left: 15px;
+}
+
 .video_sust{
     text-align: center;
 }
