@@ -7,9 +7,10 @@
     <meta name="desccription" content="Projeto Ecosun Dropshipping">
     <meta name="keywords" content="programcao, html, css, javascript">
     <meta name="author" content="Dorival Rigonato Junior, Arthur Dabela Lanoa, Evaldo Moreira de Barros, Joao Felipe Freitas, Jose Roberto Neves Bezerra">
-    <link rel="stylesheet" href="cssHome/estilo.css">
     <title>Ecosun - Carrinho de Compras</title>
     <script src="funcoesAll.js" defer></script>
+    <link rel="stylesheet" href="cssCarrinho/styles.css">
+    <link rel="icon" href="img/logo-favicon.svg" type="image/png">
 </head>
 <body>
     <header>
@@ -58,34 +59,82 @@
         </div>  
     </header>
     <main>
-        <h1 style="text-align: center;">Carrinho de Compras</h1> 
-        <hr>
-        <div>
-            <font color="red">Marque o produto que deseja rastrear</font>
-            <input type="checkbox" name="webmaster" value="sim"/><br/>
-            <hr>
+        <h1>Carrinho de Compras</h1> 
+        <div class="separador_secao"></div>
+        <br>
+        <div class="tudo_carrinho">
+            Tudo
+            <input type="checkbox" name="checkbox" value="checkbox" id="checkbox0" onchange="checkbox()">
+            <br><br>
         </div>
-        <div background="">
-            <img  src="img/painel_solar.jpg" style="width: 250px; text-align: center;" alt="Ecologo_logo"/>
-            <input type="checkbox" name="webmaster" value="sim"/>" Painel Solar Fotovoltaico 155W - Resun RS6E-155M"<br/>
-            <p> </p>
-            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-            <hr>
-        <div>
-        <div>
-            <img src="img/Kit_solar.webp" style="height: 25%; width: 250px; text-align: left;" alt="Ecologo_kit_solar"/>
-            <input type="checkbox" name="webmaster" value="sim"/> Kit Energia Solar Fotovoltaica 1860Wp - até 5846Wh/dia<br />
-            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-            <hr>
-        <div>
-        <div>
-            <img src="img/kit_solar_bateria.png" style="width: 250px text-align= left;" alt="Ecologo_kit_solar_bateria"/>
-            <input type="checkbox" name="webmaster" value="sim"/> Kit Energia Solar Off Grid c/ Bateria 465Wp - até 1465Wh/dia<br />
-            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-            <hr>
+        <div class="produto_carrinho">
+            <img  src="img/painel_solar.jpg"alt="Ecologo_logo">
+            <input type="checkbox" name="checkbox" id="checkbox1" onchange="checkbox()">
+            <div class="texto_produto_carrinho">
+                Painel Solar Fotovoltaico 155W - Resun RS6E-155M
+            </div>
+            <h4>Valor:<br>R$40,00</h4>
+        </div>
+        <div class="separador_secao"></div>
+        <div class="produto_carrinho">
+            <img src="img/Kit_solar.webp" alt="Ecologo_kit_solar">
+            <input type="checkbox" name="checkbox" id="checkbox2" onchange="checkbox()">
+            <div class="texto_produto_carrinho">
+            Kit Energia Solar Fotovoltaica 1860Wp - até 5846Wh/dia
+            </div>
+            <h4>Valor:<br>R$50,00</h4>  
+        </div>
+        <div class="separador_secao"></div>
+        <div class="produto_carrinho">
+            <img src="img/kit_solar_bateria.png" alt="Ecologo_kit_solar_bateria">
+            <input type="checkbox" name="checkbox" id="checkbox3" onchange="checkbox()">
+            <div class="texto_produto_carrinho">
+            Kit Energia Solar Off Grid c/ Bateria 465Wp - até 1465Wh/dia
+            </div>
+            <h4>Valor:<br>R$60,00</h4>
+        </div>
+        <div class="separador_secao"></div>
+        <div class="subtotal">
+            <h2>Subtotal:</h2>
+            <h4 id="subtotal">R$0,00</h4>
+            <button class="button_newsletter">Finalizar</button>
         </div>
     </main>
     <footer>
+        <div class="container_3">        
+            <div id="contact-info">
+                <h2 style="text-align: center;">Contato</h2>
+                <p>Endereço: Rua Principal, 123</p>
+                <p>Telefone: (12) 3456-7890</p>
+                <p>E-mail: contato@minhaloja.com</p>
+            </div>
+            <div id="quick-links" style="margin-top: 2%;">
+                <ul style="list-style-type: none;">&nbsp;
+                    <li style="font-size: 19px; text-align: left;"><a style="color: green;" href="polPrivacidade.html">Política de Privacidade</a></li>&nbsp;
+                    <li style="font-size: 19px; text-align: left;"><a style="color: green;" href="termosDeUso.html">Termos de Uso</a></li>&nbsp;
+                    <!-- <li style="font-size: 18px; text-align: left;"><a style="color: green;" href="#">FAQ</a></li> -->
+                </ul>
+            </div>
+            <div id="social-media">
+                <h2>Midias</h2>
+                <a href="#"><img width="30px" src="./img/facebook.png"></a>
+                <a href="#"><img width="30px" src="./img/instagram.png"></a>
+                <a href="https://www.linkedin.com/in/dorivalrigonatojunior" target="_blank"><img width="30px" src="./img/linkedin.png"></a>
+            </div>
+            <div id="newsletter-form">
+                <h2>Newsletter</h2>
+                <a style="color: green;" href="#"><h3>Assine nossos Boletins Informativos</h3></a>            
+            </div>
+            <div style="margin-top: 2%; text-align: center;">  
+                <form>
+                    <label style="color: green; font-size: 24px;" for="email"><b>Cadastre-se:</b></label><br><br>
+                    <input id="email" type="email" placeholder="Digite seu email aqui" style="background-color: #D8D8D8; font-size: 14px; width: 65%;">
+                    <br><br>
+                    <input style="font-size: 20px; margin-left: auto; margin-right: auto; width: 65%;" type="submit" value="Assinar">                
+                </form>
+            </div>
+        </div>
+        <p>&copy; 2023 Todos os direitos reservados.</p>     
     </footer>
 </body>
 </html>
