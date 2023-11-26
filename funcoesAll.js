@@ -75,3 +75,41 @@ function rastrear(){
     footer.classList.remove("rastreio");
   }
 }
+
+function checkbox(){
+  var checkbox0 = document.querySelector("#checkbox0").checked;
+  var checkbox1 = document.querySelector("#checkbox1");
+  var checkbox2 = document.querySelector("#checkbox2");
+  var checkbox3 = document.querySelector("#checkbox3");
+  var subtotal = document.querySelector("#subtotal");
+  if (checkbox0) {
+    subtotal.innerHTML = "R$ 150,00";
+    checkbox1.checked = true;
+    checkbox2.checked = true;
+    checkbox3.checked = true;
+  }
+  if ((checkbox1.checked) && (checkbox2.checked) && (checkbox3.checked)) {
+    subtotal.innerHTML = "R$ 150,00";
+  }
+  else if ((checkbox1.checked) && (checkbox2.checked)) {
+    subtotal.innerHTML = "R$ 90,00";
+  }
+  else if ((checkbox2.checked) && (checkbox3.checked)) {
+    subtotal.innerHTML = "R$ 110,00";
+  }
+  else if ((checkbox1.checked) && (checkbox3.checked)) {
+    subtotal.innerHTML = "R$ 100,00";
+  }
+  else if (checkbox1.checked){
+    subtotal.innerHTML = "R$ 40,00";
+  }
+  else if (checkbox2.checked){
+    subtotal.innerHTML = "R$ 50,00";
+  }
+  else if (checkbox3.checked){
+    subtotal.innerHTML = "R$ 60,00";
+  }
+  if ((checkbox1.checked == false) && (checkbox2.checked == false) && (checkbox3.checked == false)) {
+    subtotal.innerHTML = "R$ 0,00";
+  }
+}
