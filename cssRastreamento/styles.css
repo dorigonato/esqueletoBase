@@ -1117,6 +1117,10 @@ select option{
     .quick-links li{
         text-align: center;
     }
+
+    footer h2{
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 685px){
