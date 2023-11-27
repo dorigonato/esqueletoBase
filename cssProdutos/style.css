@@ -750,18 +750,34 @@ select option{
 
 .imagens{
     padding-top: 60px;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .img_produtos{
-    width:33%;
+    padding-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
     padding-bottom: 30px;
 }
 
 .img_produtos img{
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
     max-height: 197px;
+}
+
+.box_produto {
+    border-radius: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    position: relative;
+    background-color: #1aad0713;
+    width: 17rem;
 }
 
 @media only screen and (max-width: 1900px) {
@@ -1114,6 +1130,11 @@ select option{
     .icon_time{
         left: -25px;
     }
+
+    .imagens{
+        grid-template-columns: 1fr 1fr;
+    }
+
 }
 
 @media screen and (max-width: 800px){
