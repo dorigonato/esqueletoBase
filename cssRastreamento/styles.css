@@ -517,6 +517,7 @@ ul {
 }
 
 .pedido {
+    text-align: center;
     margin-bottom: 0%;
 }
 
@@ -558,7 +559,7 @@ input[type=checkbox] {
     height:200px;
 }
 
-h2 {
+footer h2 {
     text-align: left;
     padding-left: 10px;
 }
